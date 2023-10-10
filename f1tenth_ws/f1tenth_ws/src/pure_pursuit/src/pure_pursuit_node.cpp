@@ -140,8 +140,8 @@ public:
 
         }
         else{
-            publish_pure_pursuit();
-            //publish_gap_follow(ranges);
+            // publish_pure_pursuit();
+            publish_gap_follow(ranges);
             
         }
 

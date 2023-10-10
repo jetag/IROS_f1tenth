@@ -21,7 +21,7 @@ with open('path.csv', mode ='r')as file:
 x = x[1:]
 y = y[1:]
 #write to file
-with open('/home/jet/Downloads/trajectory_generator/inputs/tracks/wp', mode='w') as csv_file:
+with open('/trajectory_generator/inputs/tracks/wp', mode='w') as csv_file:
     #write to csv
     csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for i in range(len(x)):
