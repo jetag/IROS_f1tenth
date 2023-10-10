@@ -42,7 +42,7 @@ private:
     double pure_x,pure_y, base_x, base_y, yaw, steering_angle;
     bool drive_flag;
 
-    void set_hyperparamets()
+    void set_hyperparameters()
     {
         rclcpp::Parameter look_ahead_param = this->get_parameter("look_ahead");
         rclcpp::Parameter kp_param = this->get_parameter("kp");
@@ -68,7 +68,6 @@ public:
     PurePursuit() : Node("pure_pursuit_node")
     {
         
-        // pf_sub = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&WallFollow::scan_callback, this, _1));
         this->declare_parameter("look_ahead", 1.8);
         this->declare_parameter("kp", 0.75);
         this->declare_parameter("vel_min", 3.0);
@@ -84,7 +83,6 @@ public:
         vis_goal_pub = this->create_publisher<visualization_msgs::msg::Marker>( "visualization_goal_topic", 10 );
         vis_path_pub = this->create_publisher<visualization_msgs::msg::MarkerArray>( "visualization_path_topic", 10);
         scan_pub = this->create_publisher<sensor_msgs::msg::LaserScan>( "scan_viz", 10);        
-	
 	    odom_sub = this->create_subscription<nav_msgs::msg::Odometry>("/pf/pose/odom", 10, std::bind(&PurePursuit::pose_callback, this, _1));
         scan_sub = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&PurePursuit::scan_callback, this, _1));
 
@@ -116,7 +114,8 @@ public:
         int idx_max = (int) ((angle_max+fov)/angle_increment);
 
         check_pure_pursuit();
-        //velocity = 4.0;
+
+        // Check controller switching condition here
         int controller_flag = 0;
         for (int i=0;i<ranges.size();i++){
             if (i<idx_max && i>idx_min ){
@@ -134,18 +133,20 @@ public:
             }
         }
 
+        // Publish Global planner here
         if (controller_flag == 0){
             publish_pure_pursuit();
-            //publish_gap_follow(ranges);
-
         }
+
+        // Publish Local planner here
         else{
-            // publish_pure_pursuit();
             publish_gap_follow(ranges);
             
         }
 
     }
+
+    // Write Local planner in a seperate function
     void publish_gap_follow(std::vector<float> ranges){
 
         RCLCPP_INFO(this->get_logger(), "Doing gap follow");
@@ -219,6 +220,7 @@ public:
     }
 
 
+    // Write Global planner in a seperate function
     void check_pure_pursuit(){
         double min_dist = 100000;
         double min_y = 0;
@@ -255,14 +257,14 @@ public:
             drive_msg.drive.speed = velocity;
             // RCLCPP_INFO(this->get_logger(), "VeL: %f", drive_msg.drive.speed);
         }
-
         drive_pub->publish(drive_msg);
     }
 
+
+
     void pose_callback(const nav_msgs::msg::Odometry::ConstSharedPtr odom_msg) // use this for sim, odom
-    { 
-      
-        set_hyperparamets();
+    {       
+        set_hyperparameters();
         geometry_msgs::msg::Pose::ConstSharedPtr pose_msg = std::make_shared<geometry_msgs::msg::Pose>(odom_msg->pose.pose); // use this only for sim
 
         tf2::Quaternion q(pose_msg->orientation.x, pose_msg->orientation.y, pose_msg->orientation.z, pose_msg->orientation.w);
@@ -345,6 +347,7 @@ public:
 
     ~PurePursuit() {}
 };
+
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);

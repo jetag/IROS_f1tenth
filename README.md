@@ -1,7 +1,11 @@
 # IROS23 - Autoware Rocket
 
+![alt text](win.jpeg)
+
 ## This repository contains the files and scripts I wrote for the IROS 23 competition
-It is very convenient and easy to use, once you get the hang of it and customize it according to your specific vehicle.
+It is very convenient and easy to use, once you get the hang of it and customize it according to your specific vehicle. I have tried to make it as modular as possible so that you can use it for your own vehicle. I have also added a lot of comments in the code to make it easier to understand. 
+
+Another thing to note is that it would be smart to fork the repository and remove the `build`, `devel` folders and run `colcon build` before moving on to the next steps.
 
 ### The following are the steps to run the code
 You need to make sure that you are on the same local/wifi network as your f1tenth vehicle. One simple way to do that is to get both your laptop and the vehicle on the same wifi network and then use ifconfig to get ip details. Once you have that, you can ssh into the vehicle using the following command -
@@ -83,7 +87,7 @@ ros2 run pure_pursuit pure_pursuit_node
 
 ### Local planner and more race suggestions
 
-The local planner that I have added to this is a conventional Gap follow approach which triggers when the waypoint of the pure pursuit algorithm has an obstacle in a range less than it's lookahead. You can easily modify anything in the `/scan_callback` function.
+The local planner that I have added to this is a conventional Gap follow approach which triggers when the waypoint of the pure pursuit algorithm has an obstacle in a range less than it's lookahead. There is another approach which I implemented which was based on Time to Collision which can also be used to transition between the two states. You can easily modify anything in the `/scan_callback` function.
 
 There is another script which helps rebuild the pure pursuit packages without doing extra manual work. You can run the following command in a new terminal -
 ```
@@ -97,5 +101,8 @@ To use this package effectively, you would need to change the following -
 2. The directory locations for a lot of the system specific files
 3. The parameters in Trajectory generator for your respective track condition and style
 4. To setup Foxglove, I followed https://github.com/JChunX/foxglove-onboard
+5. There is also the vesc motor file in the scripts folder. You can use that configuration for your VESC MKV
 
+
+Happy racing! 
 
