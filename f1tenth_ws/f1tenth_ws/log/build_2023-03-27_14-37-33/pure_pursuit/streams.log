@@ -1,0 +1,96 @@
+[0.162s] Invoking command in '/home/nvidia/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake --build /home/nvidia/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.425s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.636s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.161s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.451s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.475s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.753s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.766s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.883s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.720s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[3.721s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[3.952s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[4.377s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/galactic/share/ackermann_msgs/cmake)
+[4.568s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[4.903s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[5.233s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[7.588s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[8.087s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.111s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.113s] -- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/pure_pursuit/include
+[8.114s] -- Configured cppcheck exclude dirs and/or files: 
+[8.140s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.141s] -- Configured cpplint exclude dirs and/or files: 
+[8.144s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.149s] -- Added test 'lint_cmake' to check CMake code style
+[8.156s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[8.179s] -- Added test 'uncrustify' to check C / C++ code style
+[8.179s] -- Configured uncrustify additional arguments: 
+[8.184s] -- Added test 'xmllint' to check XML markup files
+[8.213s] -- Configuring done
+[8.386s] -- Generating done
+[8.413s] -- Build files have been written to: /home/nvidia/f1tenth_ws/build/pure_pursuit
+[9.025s] [  0%] Built target ament_cmake_python_copy_pure_pursuit
+[9.295s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[9.698s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[29.978s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[29.979s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:106:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[29.979s]   106 |         for (int i=0;[01;35m[Ki<ranges.size()[m[K;i++){
+[29.980s]       |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[30.063s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[30.064s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:144:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[30.064s]   144 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+[30.064s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[30.216s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::visualize_path_points()[m[K’:
+[30.217s] [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:208:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[30.218s]   208 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+[30.218s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[87.906s] [100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[91.980s] [100%] Built target pure_pursuit_node
+[92.340s] [100%] Built target ament_cmake_python_copy_pure_pursuit_setup
+[94.668s] /home/nvidia/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[94.668s]   warnings.warn(
+[94.672s] /home/nvidia/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[94.673s]   warnings.warn(
+[95.138s] running egg_info
+[95.251s] writing pure_pursuit.egg-info/PKG-INFO
+[95.253s] writing dependency_links to pure_pursuit.egg-info/dependency_links.txt
+[95.254s] writing top-level names to pure_pursuit.egg-info/top_level.txt
+[95.692s] reading manifest file 'pure_pursuit.egg-info/SOURCES.txt'
+[95.696s] writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'
+[96.050s] [100%] Built target ament_cmake_python_build_pure_pursuit_egg
+[96.202s] Invoked command in '/home/nvidia/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake --build /home/nvidia/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[96.896s] Invoking command in '/home/nvidia/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake --install /home/nvidia/f1tenth_ws/build/pure_pursuit
+[97.049s] -- Install configuration: ""
+[97.050s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[97.158s] -- Set runtime path of "/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""
+[97.159s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+[97.159s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+[97.175s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info
+[97.176s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/PKG-INFO
+[97.177s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/SOURCES.txt
+[97.179s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/top_level.txt
+[97.183s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/dependency_links.txt
+[97.185s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit
+[97.186s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py
+[97.544s] Listing '/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...
+[97.566s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+[97.566s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/clickpoint_logger.py
+[97.567s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py
+[97.568s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[97.568s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[97.569s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[97.569s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[97.571s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[97.572s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[97.574s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[97.576s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[97.576s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[97.577s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[97.577s] -- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[97.578s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[97.579s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[97.579s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[97.579s] -- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[97.609s] Invoked command in '/home/nvidia/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake --install /home/nvidia/f1tenth_ws/build/pure_pursuit

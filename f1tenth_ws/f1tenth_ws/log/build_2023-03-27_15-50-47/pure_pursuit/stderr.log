@@ -1,0 +1,31 @@
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::set_hyperparamets()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kscale[m[K’ was not declared in this scope; did you mean ‘[01m[Kscalb[m[K’?
+   64 |         [01;31m[Kscale[m[K = scale_param.as_double();
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Kscalb[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:121:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  121 |         for (int i=0;[01;35m[Ki<ranges.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::publish_gap_follow(std::vector<float>)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:156:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  156 |         for (int i=0;[01;35m[Ki<ranges.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:180:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  180 |         for (int i=0;[01;35m[Ki<ranges_processed.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::check_pure_pursuit()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:227:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  227 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:244:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kscale[m[K’ was not declared in this scope; did you mean ‘[01m[Kscalb[m[K’?
+  244 |         velocity = [01;31m[Kscale[m[K*waypoints[min_idx][2];
+      |                    [01;31m[K^~~~~[m[K
+      |                    [32m[Kscalb[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::visualize_path_points()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:308:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  308 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/pure_pursuit_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

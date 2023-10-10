@@ -1,0 +1,100 @@
+[0.181s] Invoking command in '/home/nvidia/f1tenth_ws/build/range_lib': /usr/bin/cmake /home/nvidia/f1tenth_ws/src/range_libc -DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/range_lib
+[1.247s] -- The C compiler identification is GNU 9.4.0
+[2.578s] -- The CXX compiler identification is GNU 9.4.0
+[2.864s] -- Check for working C compiler: /usr/bin/cc
+[4.441s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.469s] -- Detecting C compiler ABI info
+[5.979s] -- Detecting C compiler ABI info - done
+[6.115s] -- Detecting C compile features
+[6.119s] -- Detecting C compile features - done
+[6.158s] -- Check for working CXX compiler: /usr/bin/c++
+[7.022s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[7.034s] -- Detecting CXX compiler ABI info
+[9.111s] -- Detecting CXX compiler ABI info - done
+[9.644s] -- Detecting CXX compile features
+[9.664s] -- Detecting CXX compile features - done
+[9.918s] -- Looking for C++ include unistd.h
+[11.140s] -- Looking for C++ include unistd.h - found
+[11.148s] -- Looking for C++ include stdint.h
+[12.209s] -- Looking for C++ include stdint.h - found
+[12.214s] -- Looking for C++ include inttypes.h
+[13.464s] -- Looking for C++ include inttypes.h - found
+[13.469s] -- Looking for C++ include sys/types.h
+[14.794s] -- Looking for C++ include sys/types.h - found
+[14.799s] -- Looking for C++ include sys/stat.h
+[15.915s] -- Looking for C++ include sys/stat.h - found
+[15.919s] -- Looking for C++ include fnmatch.h
+[17.240s] -- Looking for C++ include fnmatch.h - found
+[17.253s] -- Looking for C++ include stddef.h
+[18.106s] -- Looking for C++ include stddef.h - found
+[18.108s] -- Check size of uint32_t
+[19.156s] -- Check size of uint32_t - done
+[19.174s] -- Looking for strtoll
+[20.629s] -- Looking for strtoll - found
+[20.639s] -- Looking for pthread.h
+[21.567s] -- Looking for pthread.h - found
+[21.570s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[22.455s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[22.457s] -- Looking for pthread_create in pthreads
+[23.526s] -- Looking for pthread_create in pthreads - not found
+[23.529s] -- Looking for pthread_create in pthread
+[24.270s] -- Looking for pthread_create in pthread - found
+[24.280s] -- Found Threads: TRUE  
+[24.284s] -- Check size of pthread_rwlock_t
+[25.401s] -- Check size of pthread_rwlock_t - done
+[25.507s] -- Performing Test COMPILER_SUPPORTS_CXX11
+[26.564s] -- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+[26.578s] -- Performing Test COMPILER_SUPPORTS_CXX0X
+[27.698s] -- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+[28.123s] -- Found CUDA: /usr/local/cuda-11.4 (found version "11.4") 
+[28.180s] -- Configuring done
+[28.275s] -- Generating done
+[28.284s] -- Build files have been written to: /home/nvidia/f1tenth_ws/build/range_lib
+[28.332s] Invoked command in '/home/nvidia/f1tenth_ws/build/range_lib' returned '0': /usr/bin/cmake /home/nvidia/f1tenth_ws/src/range_libc -DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/range_lib
+[28.335s] Invoking command in '/home/nvidia/f1tenth_ws/build/range_lib': /usr/bin/cmake --build /home/nvidia/f1tenth_ws/build/range_lib -- -j6 -l6
+[28.921s] -- Configuring done
+[29.008s] -- Generating done
+[29.021s] -- Build files have been written to: /home/nvidia/f1tenth_ws/build/range_lib
+[29.241s] [35m[1mScanning dependencies of target gflags_nothreads_static[0m
+[29.320s] make[2]: Warning: File '/home/nvidia/f1tenth_ws/src/range_libc/vendor/gflags/src/gflags.cc' has modification time 15461854 s in the future
+[29.395s] [  8%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_nothreads_static.dir/src/gflags.cc.o[0m
+[38.400s] [ 16%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_nothreads_static.dir/src/gflags_completions.cc.o[0m
+[42.860s] [ 25%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_nothreads_static.dir/src/gflags_reporting.cc.o[0m
+[47.070s] [ 33%] [32m[1mLinking CXX static library ../../lib/libgflags_nothreads.a[0m
+[47.488s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[47.630s] [ 33%] Built target gflags_nothreads_static
+[47.734s] [35m[1mScanning dependencies of target gflags_static[0m
+[47.776s] make[2]: Warning: File '/home/nvidia/f1tenth_ws/src/range_libc/vendor/gflags/src/gflags.cc' has modification time 15461836 s in the future
+[47.924s] [ 41%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_static.dir/src/gflags.cc.o[0m
+[58.386s] [ 50%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_static.dir/src/gflags_completions.cc.o[0m
+[63.449s] [ 58%] [32mBuilding CXX object vendor/gflags/CMakeFiles/gflags_static.dir/src/gflags_reporting.cc.o[0m
+[66.802s] [ 66%] [32m[1mLinking CXX static library ../../lib/libgflags.a[0m
+[67.097s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[67.215s] [ 66%] Built target gflags_static
+[67.229s] make[2]: Warning: File '/home/nvidia/f1tenth_ws/src/range_libc/includes/kernels.cu' has modification time 15461816 s in the future
+[67.298s] [ 75%] [34m[1mBuilding NVCC (Device) object CMakeFiles/range_lib.dir/includes/range_lib_generated_kernels.cu.o[0m
+[81.040s] [35m[1mScanning dependencies of target range_lib[0m
+[81.086s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[81.096s] make[2]: Warning: File '/home/nvidia/f1tenth_ws/src/range_libc/main.cpp' has modification time 15461802 s in the future
+[81.182s] [ 83%] [32mBuilding CXX object CMakeFiles/range_lib.dir/main.cpp.o[0m
+[107.557s] [ 83%] [34m[1mBuilding NVCC (Device) object CMakeFiles/range_lib.dir/includes/range_lib_generated_kernels.cu.o[0m
+[119.443s] [ 91%] [32mBuilding CXX object CMakeFiles/range_lib.dir/vendor/lodepng/lodepng.cpp.o[0m
+[143.396s] [100%] [32m[1mLinking CXX executable bin/range_lib[0m
+[143.968s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[144.022s] [100%] Built target range_lib
+[144.108s] Invoked command in '/home/nvidia/f1tenth_ws/build/range_lib' returned '0': /usr/bin/cmake --build /home/nvidia/f1tenth_ws/build/range_lib -- -j6 -l6
+[144.292s] Invoking command in '/home/nvidia/f1tenth_ws/build/range_lib': /usr/bin/cmake --install /home/nvidia/f1tenth_ws/build/range_lib
+[144.359s] -- Install configuration: "Release"
+[144.362s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/libgflags.a
+[144.371s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/libgflags_nothreads.a
+[144.383s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/include/gflags/gflags.h
+[144.384s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/include/gflags/gflags_declare.h
+[144.386s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/include/gflags/gflags_completions.h
+[144.387s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/include/gflags/gflags_gflags.h
+[144.388s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/cmake/gflags/gflags-config.cmake
+[144.393s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/cmake/gflags/gflags-config-version.cmake
+[144.394s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/cmake/gflags/gflags-targets.cmake
+[144.396s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/bin/gflags_completions.sh
+[144.398s] -- Installing: /home/nvidia/f1tenth_ws/install/range_lib/lib/pkgconfig/gflags.pc
+[144.404s] -- Installing: /home/nvidia/.cmake/packages/gflags/2028594a0ebd649dfc76e879e5d10b3f
+[144.426s] Invoked command in '/home/nvidia/f1tenth_ws/build/range_lib' returned '0': /usr/bin/cmake --install /home/nvidia/f1tenth_ws/build/range_lib

@@ -1,0 +1,30 @@
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:110:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  110 |         for (int i=0;[01;35m[Ki<ranges.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:112:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2::angle[m[K’?
+  112 |                 [01;31m[Kangle[m[K[i] = angle_min + i*angle_increment;
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Ktf2::angle[m[K
+In file included from [01m[K/opt/ros/galactic/include/tf2/LinearMath/Matrix3x3.h:20[m[K,
+                 from [01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:17[m[K:
+[01m[K/opt/ros/galactic/include/tf2/LinearMath/Quaternion.h:410:1:[m[K [01;36m[Knote: [m[K‘[01m[Ktf2::angle[m[K’ declared here
+  410 | [01;36m[Kangle[m[K(const Quaternion& q1, const Quaternion& q2)
+      | [01;36m[K^~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:113:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel[m[K’ was not declared in this scope
+  113 |                 [01;31m[Kvel[m[K[i] = max(velocity*cos(angle[i]),0.001)
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:115:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kttc_threshold[m[K’ was not declared in this scope
+  115 |                 [01;31m[Kttc_threshold[m[K = 1.5;
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:149:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  149 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::visualize_path_points()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:213:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  213 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/pure_pursuit_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,995 @@
+[0.000000] (-) TimerEvent: {}
+[0.001640] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001843] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.001959] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.002067] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.002175] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.002292] (-) JobUnselected: {'identifier': 'particle_filter'}
+[0.002405] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.002517] (-) JobUnselected: {'identifier': 'range_lib'}
+[0.002623] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.002728] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.002840] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005816] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.006105] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.007587] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/nvidia/f1tenth_ws/install/vesc_msgs')])}
+[0.008708] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[0.100550] (-) TimerEvent: {}
+[0.143395] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[0.149561] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/vesc_ackermann'], 'cwd': '/home/nvidia/f1tenth_ws/build/vesc_ackermann', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2804'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2324'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:57479'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2840,unix/ubuntu:/tmp/.ICE-unix/2840'), ('INVOCATION_ID', 'eeafa1c0166d468dacf9b3a13fed9e08'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:216dbad2-254a-4681-beef-edcb2da461b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/vesc_ackermann'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[0.201010] (-) TimerEvent: {}
+[0.303341] (-) TimerEvent: {}
+[0.405107] (-) TimerEvent: {}
+[0.506261] (-) TimerEvent: {}
+[0.608391] (-) TimerEvent: {}
+[0.616260] (vesc_ackermann) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.708705] (-) TimerEvent: {}
+[0.811047] (-) TimerEvent: {}
+[0.913019] (-) TimerEvent: {}
+[1.014100] (-) TimerEvent: {}
+[1.053592] (vesc_ackermann) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.081209] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.114345] (-) TimerEvent: {}
+[1.215411] (-) TimerEvent: {}
+[1.316517] (-) TimerEvent: {}
+[1.417629] (-) TimerEvent: {}
+[1.518696] (-) TimerEvent: {}
+[1.570568] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.577543] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.619042] (-) TimerEvent: {}
+[1.720308] (-) TimerEvent: {}
+[1.821424] (-) TimerEvent: {}
+[1.922508] (-) TimerEvent: {}
+[2.023617] (-) TimerEvent: {}
+[2.033268] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.091720] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.093441] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.106444] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.123970] (-) TimerEvent: {}
+[2.225141] (-) TimerEvent: {}
+[2.326227] (-) TimerEvent: {}
+[2.427438] (-) TimerEvent: {}
+[2.528696] (-) TimerEvent: {}
+[2.629756] (-) TimerEvent: {}
+[2.631520] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.642618] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.730043] (-) TimerEvent: {}
+[2.831121] (-) TimerEvent: {}
+[2.932272] (-) TimerEvent: {}
+[3.033229] (-) TimerEvent: {}
+[3.134312] (-) TimerEvent: {}
+[3.183227] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.234572] (-) TimerEvent: {}
+[3.242987] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.245520] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.262396] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)\n'}
+[3.335588] (-) TimerEvent: {}
+[3.437233] (-) TimerEvent: {}
+[3.457459] (vesc_ackermann) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.458968] (vesc_ackermann) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.537548] (-) TimerEvent: {}
+[3.638534] (-) TimerEvent: {}
+[3.740226] (-) TimerEvent: {}
+[3.841313] (-) TimerEvent: {}
+[3.942404] (-) TimerEvent: {}
+[4.043464] (-) TimerEvent: {}
+[4.144687] (-) TimerEvent: {}
+[4.247782] (-) TimerEvent: {}
+[4.350276] (-) TimerEvent: {}
+[4.451359] (-) TimerEvent: {}
+[4.554141] (-) TimerEvent: {}
+[4.555955] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.606030] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[4.654949] (-) TimerEvent: {}
+[4.757444] (-) TimerEvent: {}
+[4.858544] (-) TimerEvent: {}
+[4.959881] (-) TimerEvent: {}
+[5.063675] (-) TimerEvent: {}
+[5.166643] (-) TimerEvent: {}
+[5.215644] (vesc_ackermann) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.266906] (-) TimerEvent: {}
+[5.368039] (-) TimerEvent: {}
+[5.397004] (vesc_ackermann) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[5.468294] (-) TimerEvent: {}
+[5.569343] (-) TimerEvent: {}
+[5.670417] (-) TimerEvent: {}
+[5.771485] (-) TimerEvent: {}
+[5.873533] (-) TimerEvent: {}
+[5.902538] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.973830] (-) TimerEvent: {}
+[6.074860] (-) TimerEvent: {}
+[6.178128] (-) TimerEvent: {}
+[6.279193] (-) TimerEvent: {}
+[6.380297] (-) TimerEvent: {}
+[6.484929] (-) TimerEvent: {}
+[6.586030] (-) TimerEvent: {}
+[6.687238] (-) TimerEvent: {}
+[6.789253] (-) TimerEvent: {}
+[6.890756] (-) TimerEvent: {}
+[6.993958] (-) TimerEvent: {}
+[7.095250] (-) TimerEvent: {}
+[7.180009] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[7.196425] (-) TimerEvent: {}
+[7.200592] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[7.296335] (-) TimerEvent: {}
+[7.311488] (vesc_ackermann) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[7.316320] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.404778] (-) TimerEvent: {}
+[7.505936] (-) TimerEvent: {}
+[7.607295] (-) TimerEvent: {}
+[7.708310] (-) TimerEvent: {}
+[7.809469] (-) TimerEvent: {}
+[7.815572] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.817618] (vesc_ackermann) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.909692] (-) TimerEvent: {}
+[8.010766] (-) TimerEvent: {}
+[8.111930] (-) TimerEvent: {}
+[8.212945] (-) TimerEvent: {}
+[8.314008] (-) TimerEvent: {}
+[8.335741] (vesc_ackermann) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[8.339494] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[8.414255] (-) TimerEvent: {}
+[8.515261] (-) TimerEvent: {}
+[8.616845] (-) TimerEvent: {}
+[8.719336] (-) TimerEvent: {}
+[8.752171] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[8.753397] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[8.819634] (-) TimerEvent: {}
+[8.921546] (-) TimerEvent: {}
+[9.026032] (-) TimerEvent: {}
+[9.127140] (-) TimerEvent: {}
+[9.224626] (vesc_ackermann) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.227425] (-) TimerEvent: {}
+[9.233753] (vesc_ackermann) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.327757] (-) TimerEvent: {}
+[9.429283] (-) TimerEvent: {}
+[9.530462] (-) TimerEvent: {}
+[9.632759] (-) TimerEvent: {}
+[9.733747] (-) TimerEvent: {}
+[9.834835] (-) TimerEvent: {}
+[9.935995] (-) TimerEvent: {}
+[10.037022] (-) TimerEvent: {}
+[10.138042] (-) TimerEvent: {}
+[10.239086] (-) TimerEvent: {}
+[10.340215] (-) TimerEvent: {}
+[10.441263] (-) TimerEvent: {}
+[10.542300] (-) TimerEvent: {}
+[10.643496] (-) TimerEvent: {}
+[10.744789] (-) TimerEvent: {}
+[10.845824] (-) TimerEvent: {}
+[10.946852] (-) TimerEvent: {}
+[11.048230] (-) TimerEvent: {}
+[11.149294] (-) TimerEvent: {}
+[11.250340] (-) TimerEvent: {}
+[11.351420] (-) TimerEvent: {}
+[11.452524] (-) TimerEvent: {}
+[11.553517] (-) TimerEvent: {}
+[11.654576] (-) TimerEvent: {}
+[11.755625] (-) TimerEvent: {}
+[11.856815] (-) TimerEvent: {}
+[11.957893] (-) TimerEvent: {}
+[12.020688] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[12.058142] (-) TimerEvent: {}
+[12.159267] (-) TimerEvent: {}
+[12.172622] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[12.182572] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[12.186106] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include\n'}
+[12.186993] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[12.192849] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[12.193896] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[12.198738] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.208323] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[12.209075] (vesc_ackermann) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[12.212108] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.257225] (vesc_ackermann) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.259448] (-) TimerEvent: {}
+[12.360510] (-) TimerEvent: {}
+[12.409564] (vesc_ackermann) StdoutLine: {'line': b'-- Generating done\n'}
+[12.421591] (vesc_ackermann) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/f1tenth_ws/build/vesc_ackermann\n'}
+[12.460783] (-) TimerEvent: {}
+[12.465682] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[12.479786] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[12.488582] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/f1tenth_ws/build/vesc_ackermann', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/f1tenth_ws/build/vesc_ackermann', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2804'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2324'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:57479'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2840,unix/ubuntu:/tmp/.ICE-unix/2840'), ('INVOCATION_ID', 'eeafa1c0166d468dacf9b3a13fed9e08'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:216dbad2-254a-4681-beef-edcb2da461b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/vesc_ackermann'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[12.562166] (-) TimerEvent: {}
+[12.654333] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)\n'}
+[12.662270] (-) TimerEvent: {}
+[12.763073] (-) TimerEvent: {}
+[12.797292] (vesc_ackermann) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.863297] (-) TimerEvent: {}
+[12.964358] (-) TimerEvent: {}
+[13.065372] (-) TimerEvent: {}
+[13.166481] (-) TimerEvent: {}
+[13.267491] (-) TimerEvent: {}
+[13.368577] (-) TimerEvent: {}
+[13.472263] (-) TimerEvent: {}
+[13.574921] (-) TimerEvent: {}
+[13.676247] (-) TimerEvent: {}
+[13.682104] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.704796] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[13.776490] (-) TimerEvent: {}
+[13.878365] (-) TimerEvent: {}
+[13.979687] (-) TimerEvent: {}
+[14.081268] (-) TimerEvent: {}
+[14.183279] (-) TimerEvent: {}
+[14.284732] (-) TimerEvent: {}
+[14.385797] (-) TimerEvent: {}
+[14.474818] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.486022] (-) TimerEvent: {}
+[14.587053] (-) TimerEvent: {}
+[14.688307] (-) TimerEvent: {}
+[14.789420] (-) TimerEvent: {}
+[14.890560] (-) TimerEvent: {}
+[14.992420] (-) TimerEvent: {}
+[15.093420] (-) TimerEvent: {}
+[15.194488] (-) TimerEvent: {}
+[15.295628] (-) TimerEvent: {}
+[15.396636] (-) TimerEvent: {}
+[15.497603] (-) TimerEvent: {}
+[15.598705] (-) TimerEvent: {}
+[15.601777] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[15.614826] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[15.699345] (-) TimerEvent: {}
+[15.712224] (vesc_ackermann) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[15.799429] (-) TimerEvent: {}
+[15.900600] (-) TimerEvent: {}
+[16.001707] (-) TimerEvent: {}
+[16.102888] (-) TimerEvent: {}
+[16.204514] (-) TimerEvent: {}
+[16.305640] (-) TimerEvent: {}
+[16.407339] (-) TimerEvent: {}
+[16.508889] (-) TimerEvent: {}
+[16.610281] (-) TimerEvent: {}
+[16.711436] (-) TimerEvent: {}
+[16.813302] (-) TimerEvent: {}
+[16.916113] (-) TimerEvent: {}
+[17.017746] (-) TimerEvent: {}
+[17.118864] (-) TimerEvent: {}
+[17.220024] (-) TimerEvent: {}
+[17.321071] (-) TimerEvent: {}
+[17.422280] (-) TimerEvent: {}
+[17.523300] (-) TimerEvent: {}
+[17.624429] (-) TimerEvent: {}
+[17.725525] (-) TimerEvent: {}
+[17.826570] (-) TimerEvent: {}
+[17.927695] (-) TimerEvent: {}
+[18.028866] (-) TimerEvent: {}
+[18.129923] (-) TimerEvent: {}
+[18.230987] (-) TimerEvent: {}
+[18.283708] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[18.331275] (-) TimerEvent: {}
+[18.342153] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[18.350482] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.352449] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include\n'}
+[18.353252] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.359749] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[18.364773] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[18.366539] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.373371] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.374258] (vesc_ackermann) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.375262] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.408857] (vesc_ackermann) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.431511] (-) TimerEvent: {}
+[18.532585] (-) TimerEvent: {}
+[18.552642] (vesc_ackermann) StdoutLine: {'line': b'-- Generating done\n'}
+[18.566518] (vesc_ackermann) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/f1tenth_ws/build/vesc_ackermann\n'}
+[18.632848] (-) TimerEvent: {}
+[18.717692] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ackermann_to_vesc_node\x1b[0m\n'}
+[18.723403] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vesc_to_odom_node\x1b[0m\n'}
+[18.728797] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vesc_ackermann\x1b[0m\n'}
+[18.733296] (-) TimerEvent: {}
+[18.835631] (-) TimerEvent: {}
+[18.936897] (-) TimerEvent: {}
+[19.023702] (vesc_ackermann) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o\x1b[0m\n'}
+[19.036409] (vesc_ackermann) StderrLine: {'line': b"make[2]: Warning: File '/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp' has modification time 15452948 s in the future\n"}
+[19.037471] (-) TimerEvent: {}
+[19.071731] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o\x1b[0m\n'}
+[19.130762] (vesc_ackermann) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o\x1b[0m\n'}
+[19.138093] (-) TimerEvent: {}
+[19.151174] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\x1b[0m\n'}
+[19.238328] (-) TimerEvent: {}
+[19.340077] (-) TimerEvent: {}
+[19.441972] (-) TimerEvent: {}
+[19.543991] (-) TimerEvent: {}
+[19.645825] (-) TimerEvent: {}
+[19.747255] (-) TimerEvent: {}
+[19.849393] (-) TimerEvent: {}
+[19.950563] (-) TimerEvent: {}
+[20.052485] (-) TimerEvent: {}
+[20.154740] (-) TimerEvent: {}
+[20.257510] (-) TimerEvent: {}
+[20.360000] (-) TimerEvent: {}
+[20.462554] (-) TimerEvent: {}
+[20.564477] (-) TimerEvent: {}
+[20.667746] (-) TimerEvent: {}
+[20.769967] (-) TimerEvent: {}
+[20.873673] (-) TimerEvent: {}
+[20.980395] (-) TimerEvent: {}
+[21.083415] (-) TimerEvent: {}
+[21.186756] (-) TimerEvent: {}
+[21.288992] (-) TimerEvent: {}
+[21.392082] (-) TimerEvent: {}
+[21.499090] (-) TimerEvent: {}
+[21.601718] (-) TimerEvent: {}
+[21.704599] (-) TimerEvent: {}
+[21.805888] (-) TimerEvent: {}
+[21.908148] (-) TimerEvent: {}
+[22.010693] (-) TimerEvent: {}
+[22.114945] (-) TimerEvent: {}
+[22.219136] (-) TimerEvent: {}
+[22.321752] (-) TimerEvent: {}
+[22.423998] (-) TimerEvent: {}
+[22.528065] (-) TimerEvent: {}
+[22.629340] (-) TimerEvent: {}
+[22.732330] (-) TimerEvent: {}
+[22.834502] (-) TimerEvent: {}
+[22.937065] (-) TimerEvent: {}
+[23.043025] (-) TimerEvent: {}
+[23.150229] (-) TimerEvent: {}
+[23.251437] (-) TimerEvent: {}
+[23.353662] (-) TimerEvent: {}
+[23.455411] (-) TimerEvent: {}
+[23.557548] (-) TimerEvent: {}
+[23.666102] (-) TimerEvent: {}
+[23.767760] (-) TimerEvent: {}
+[23.869175] (-) TimerEvent: {}
+[23.970569] (-) TimerEvent: {}
+[24.071658] (-) TimerEvent: {}
+[24.172836] (-) TimerEvent: {}
+[24.273877] (-) TimerEvent: {}
+[24.375249] (-) TimerEvent: {}
+[24.477344] (-) TimerEvent: {}
+[24.578672] (-) TimerEvent: {}
+[24.680490] (-) TimerEvent: {}
+[24.781696] (-) TimerEvent: {}
+[24.883776] (-) TimerEvent: {}
+[24.985751] (-) TimerEvent: {}
+[25.086976] (-) TimerEvent: {}
+[25.193238] (-) TimerEvent: {}
+[25.294389] (-) TimerEvent: {}
+[25.398510] (-) TimerEvent: {}
+[25.500362] (-) TimerEvent: {}
+[25.604592] (-) TimerEvent: {}
+[25.707581] (-) TimerEvent: {}
+[25.809963] (-) TimerEvent: {}
+[25.912137] (-) TimerEvent: {}
+[26.016477] (-) TimerEvent: {}
+[26.117606] (-) TimerEvent: {}
+[26.222376] (-) TimerEvent: {}
+[26.329515] (-) TimerEvent: {}
+[26.431144] (-) TimerEvent: {}
+[26.533973] (-) TimerEvent: {}
+[26.644858] (-) TimerEvent: {}
+[26.752213] (-) TimerEvent: {}
+[26.855370] (-) TimerEvent: {}
+[26.958032] (-) TimerEvent: {}
+[27.059249] (-) TimerEvent: {}
+[27.162959] (-) TimerEvent: {}
+[27.265392] (-) TimerEvent: {}
+[27.367683] (-) TimerEvent: {}
+[27.469812] (-) TimerEvent: {}
+[27.571620] (-) TimerEvent: {}
+[27.674563] (-) TimerEvent: {}
+[27.776686] (-) TimerEvent: {}
+[27.878544] (-) TimerEvent: {}
+[27.980469] (-) TimerEvent: {}
+[28.086448] (-) TimerEvent: {}
+[28.188378] (-) TimerEvent: {}
+[28.289615] (-) TimerEvent: {}
+[28.391409] (-) TimerEvent: {}
+[28.494175] (-) TimerEvent: {}
+[28.596572] (-) TimerEvent: {}
+[28.698427] (-) TimerEvent: {}
+[28.800992] (-) TimerEvent: {}
+[28.906099] (-) TimerEvent: {}
+[29.013296] (-) TimerEvent: {}
+[29.115561] (-) TimerEvent: {}
+[29.217873] (-) TimerEvent: {}
+[29.322264] (-) TimerEvent: {}
+[29.397470] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kvesc_ackermann::AckermannToVesc::AckermannToVesc(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.398911] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:51:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[29.403520] (vesc_ackermann) StderrLine: {'line': b'   51 |   speed_to_erpm_gain_ = declare_parameter("speed_to_erpm_gain"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[29.408166] (vesc_ackermann) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.409191] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[29.409771] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[29.418639] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[29.419234] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp:35\x1b[m\x1b[K,\n'}
+[29.420370] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:31\x1b[m\x1b[K:\n'}
+[29.420968] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[29.421481] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[29.421929] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.422362] (-) TimerEvent: {}
+[29.423589] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:52:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[29.424327] (vesc_ackermann) StderrLine: {'line': b'   52 |   speed_to_erpm_offset_ = declare_parameter("speed_to_erpm_offset"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[29.424807] (vesc_ackermann) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.425261] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[29.425672] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[29.426078] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[29.426574] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp:35\x1b[m\x1b[K,\n'}
+[29.427247] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:31\x1b[m\x1b[K:\n'}
+[29.427774] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[29.428895] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[29.429378] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.429842] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:53:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[29.430457] (vesc_ackermann) StderrLine: {'line': b'   53 |   steering_to_servo_gain_ = declare_parameter("steering_angle_to_servo_gain"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[29.430867] (vesc_ackermann) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.431273] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[29.431665] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[29.432203] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[29.432627] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp:35\x1b[m\x1b[K,\n'}
+[29.433057] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:31\x1b[m\x1b[K:\n'}
+[29.433469] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[29.435582] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[29.436216] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.436654] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:54:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[29.437103] (vesc_ackermann) StderrLine: {'line': b'   54 |   steering_to_servo_offset_ = declare_parameter("steering_angle_to_servo_offset"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[29.437533] (vesc_ackermann) StderrLine: {'line': b'      |                                                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.437936] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[29.438356] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[29.438767] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[29.439168] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp:35\x1b[m\x1b[K,\n'}
+[29.441375] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/ackermann_to_vesc.cpp:31\x1b[m\x1b[K:\n'}
+[29.446331] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[29.451596] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[29.452585] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.522700] (-) TimerEvent: {}
+[29.625066] (-) TimerEvent: {}
+[29.726870] (-) TimerEvent: {}
+[29.828121] (-) TimerEvent: {}
+[29.929222] (-) TimerEvent: {}
+[30.030205] (-) TimerEvent: {}
+[30.131466] (-) TimerEvent: {}
+[30.238823] (-) TimerEvent: {}
+[30.341996] (-) TimerEvent: {}
+[30.444380] (-) TimerEvent: {}
+[30.452177] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kvesc_ackermann::VescToOdom::VescToOdom(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.453108] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:63:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[30.453804] (vesc_ackermann) StderrLine: {'line': b'   63 |   speed_to_erpm_gain_ = declare_parameter("speed_to_erpm_gain"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[30.454380] (vesc_ackermann) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.455265] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[30.455983] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[30.457776] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[30.458250] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:35\x1b[m\x1b[K,\n'}
+[30.458810] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[30.468187] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[30.468977] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[30.469505] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.469944] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:64:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[30.471415] (vesc_ackermann) StderrLine: {'line': b'   64 |   speed_to_erpm_offset_ = declare_parameter("speed_to_erpm_offset"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[30.472074] (vesc_ackermann) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.472587] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[30.473007] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[30.473430] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[30.473830] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:35\x1b[m\x1b[K,\n'}
+[30.474254] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[30.474662] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[30.475093] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[30.475520] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.476015] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:67:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[30.476618] (vesc_ackermann) StderrLine: {'line': b'   67 |     steering_to_servo_gain_ = declare_parameter("steering_angle_to_servo_gain"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[30.477040] (vesc_ackermann) StderrLine: {'line': b'      |                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.477470] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[30.477952] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[30.478356] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[30.484526] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:35\x1b[m\x1b[K,\n'}
+[30.485087] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[30.486402] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[30.486997] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[30.487461] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.487980] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:68:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[30.488500] (vesc_ackermann) StderrLine: {'line': b'   68 |     steering_to_servo_offset_ = declare_parameter("steering_angle_to_servo_offset"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[30.488975] (vesc_ackermann) StderrLine: {'line': b'      |                                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.489381] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[30.489821] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[30.490237] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[30.490627] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:35\x1b[m\x1b[K,\n'}
+[30.491024] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[30.491439] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[30.504033] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[30.504917] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.505426] (vesc_ackermann) StderrLine: {'line': b"\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:69:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[30.505984] (vesc_ackermann) StderrLine: {'line': b'   69 |     wheelbase_ = declare_parameter("wheelbase"\x1b[01;35m\x1b[K)\x1b[m\x1b[K.get<double>();\n'}
+[30.506419] (vesc_ackermann) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.506936] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[30.507356] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[30.507756] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[30.508389] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:35\x1b[m\x1b[K,\n'}
+[30.508834] (vesc_ackermann) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[30.509250] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[30.509649] (vesc_ackermann) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[30.510120] (vesc_ackermann) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.544626] (-) TimerEvent: {}
+[30.645690] (-) TimerEvent: {}
+[30.746801] (-) TimerEvent: {}
+[30.848942] (-) TimerEvent: {}
+[30.953300] (-) TimerEvent: {}
+[31.055289] (-) TimerEvent: {}
+[31.156612] (-) TimerEvent: {}
+[31.257967] (-) TimerEvent: {}
+[31.360364] (-) TimerEvent: {}
+[31.461855] (-) TimerEvent: {}
+[31.563200] (-) TimerEvent: {}
+[31.666361] (-) TimerEvent: {}
+[31.768675] (-) TimerEvent: {}
+[31.872296] (-) TimerEvent: {}
+[31.974436] (-) TimerEvent: {}
+[32.077031] (-) TimerEvent: {}
+[32.181162] (-) TimerEvent: {}
+[32.283295] (-) TimerEvent: {}
+[32.386218] (-) TimerEvent: {}
+[32.489741] (-) TimerEvent: {}
+[32.593519] (-) TimerEvent: {}
+[32.698156] (-) TimerEvent: {}
+[32.799457] (-) TimerEvent: {}
+[32.900966] (-) TimerEvent: {}
+[33.005950] (-) TimerEvent: {}
+[33.122171] (-) TimerEvent: {}
+[33.224734] (-) TimerEvent: {}
+[33.325998] (-) TimerEvent: {}
+[33.427081] (-) TimerEvent: {}
+[33.529189] (-) TimerEvent: {}
+[33.634603] (-) TimerEvent: {}
+[33.738116] (-) TimerEvent: {}
+[33.840642] (-) TimerEvent: {}
+[33.943393] (-) TimerEvent: {}
+[34.044816] (-) TimerEvent: {}
+[34.150120] (-) TimerEvent: {}
+[34.254441] (-) TimerEvent: {}
+[34.357690] (-) TimerEvent: {}
+[34.458881] (-) TimerEvent: {}
+[34.560130] (-) TimerEvent: {}
+[34.661466] (-) TimerEvent: {}
+[34.765476] (-) TimerEvent: {}
+[34.866721] (-) TimerEvent: {}
+[34.969009] (-) TimerEvent: {}
+[35.071635] (-) TimerEvent: {}
+[35.173761] (-) TimerEvent: {}
+[35.276341] (-) TimerEvent: {}
+[35.377635] (-) TimerEvent: {}
+[35.479436] (-) TimerEvent: {}
+[35.581231] (-) TimerEvent: {}
+[35.692202] (-) TimerEvent: {}
+[35.802868] (-) TimerEvent: {}
+[35.890301] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable ackermann_to_vesc_node\x1b[0m\n'}
+[35.903136] (-) TimerEvent: {}
+[36.007313] (-) TimerEvent: {}
+[36.108898] (-) TimerEvent: {}
+[36.213534] (-) TimerEvent: {}
+[36.314697] (-) TimerEvent: {}
+[36.416025] (-) TimerEvent: {}
+[36.520576] (-) TimerEvent: {}
+[36.621764] (-) TimerEvent: {}
+[36.680577] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] Built target ackermann_to_vesc_node\n'}
+[36.722028] (-) TimerEvent: {}
+[36.758183] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable vesc_to_odom_node\x1b[0m\n'}
+[36.823294] (-) TimerEvent: {}
+[36.928183] (-) TimerEvent: {}
+[37.032018] (-) TimerEvent: {}
+[37.136826] (-) TimerEvent: {}
+[37.238192] (-) TimerEvent: {}
+[37.340238] (-) TimerEvent: {}
+[37.441718] (-) TimerEvent: {}
+[37.451267] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Built target vesc_to_odom_node\n'}
+[37.542042] (-) TimerEvent: {}
+[37.643337] (-) TimerEvent: {}
+[37.744913] (-) TimerEvent: {}
+[37.847602] (-) TimerEvent: {}
+[37.949502] (-) TimerEvent: {}
+[38.050621] (-) TimerEvent: {}
+[38.151714] (-) TimerEvent: {}
+[38.252770] (-) TimerEvent: {}
+[38.354521] (-) TimerEvent: {}
+[38.456846] (-) TimerEvent: {}
+[38.557933] (-) TimerEvent: {}
+[38.659377] (-) TimerEvent: {}
+[38.761251] (-) TimerEvent: {}
+[38.863047] (-) TimerEvent: {}
+[38.966596] (-) TimerEvent: {}
+[39.067626] (-) TimerEvent: {}
+[39.168685] (-) TimerEvent: {}
+[39.269783] (-) TimerEvent: {}
+[39.373761] (-) TimerEvent: {}
+[39.474848] (-) TimerEvent: {}
+[39.576432] (-) TimerEvent: {}
+[39.678706] (-) TimerEvent: {}
+[39.779684] (-) TimerEvent: {}
+[39.880760] (-) TimerEvent: {}
+[39.981960] (-) TimerEvent: {}
+[40.082946] (-) TimerEvent: {}
+[40.184468] (-) TimerEvent: {}
+[40.285636] (-) TimerEvent: {}
+[40.389223] (-) TimerEvent: {}
+[40.495289] (-) TimerEvent: {}
+[40.598700] (-) TimerEvent: {}
+[40.699779] (-) TimerEvent: {}
+[40.801051] (-) TimerEvent: {}
+[40.902118] (-) TimerEvent: {}
+[41.004244] (-) TimerEvent: {}
+[41.105295] (-) TimerEvent: {}
+[41.206417] (-) TimerEvent: {}
+[41.307582] (-) TimerEvent: {}
+[41.408822] (-) TimerEvent: {}
+[41.509906] (-) TimerEvent: {}
+[41.611008] (-) TimerEvent: {}
+[41.713765] (-) TimerEvent: {}
+[41.814846] (-) TimerEvent: {}
+[41.916198] (-) TimerEvent: {}
+[42.017390] (-) TimerEvent: {}
+[42.118877] (-) TimerEvent: {}
+[42.221660] (-) TimerEvent: {}
+[42.323133] (-) TimerEvent: {}
+[42.424234] (-) TimerEvent: {}
+[42.526606] (-) TimerEvent: {}
+[42.628564] (-) TimerEvent: {}
+[42.731273] (-) TimerEvent: {}
+[42.832407] (-) TimerEvent: {}
+[42.933761] (-) TimerEvent: {}
+[43.036372] (-) TimerEvent: {}
+[43.137455] (-) TimerEvent: {}
+[43.238485] (-) TimerEvent: {}
+[43.341267] (-) TimerEvent: {}
+[43.443002] (-) TimerEvent: {}
+[43.548732] (-) TimerEvent: {}
+[43.651748] (-) TimerEvent: {}
+[43.753973] (-) TimerEvent: {}
+[43.857103] (-) TimerEvent: {}
+[43.958316] (-) TimerEvent: {}
+[44.062574] (-) TimerEvent: {}
+[44.163700] (-) TimerEvent: {}
+[44.266875] (-) TimerEvent: {}
+[44.367941] (-) TimerEvent: {}
+[44.469008] (-) TimerEvent: {}
+[44.570119] (-) TimerEvent: {}
+[44.671267] (-) TimerEvent: {}
+[44.772684] (-) TimerEvent: {}
+[44.875738] (-) TimerEvent: {}
+[44.976856] (-) TimerEvent: {}
+[45.077947] (-) TimerEvent: {}
+[45.179254] (-) TimerEvent: {}
+[45.281417] (-) TimerEvent: {}
+[45.384008] (-) TimerEvent: {}
+[45.485105] (-) TimerEvent: {}
+[45.586139] (-) TimerEvent: {}
+[45.687223] (-) TimerEvent: {}
+[45.788422] (-) TimerEvent: {}
+[45.889697] (-) TimerEvent: {}
+[45.995513] (-) TimerEvent: {}
+[46.103989] (-) TimerEvent: {}
+[46.214895] (-) TimerEvent: {}
+[46.316540] (-) TimerEvent: {}
+[46.419359] (-) TimerEvent: {}
+[46.521221] (-) TimerEvent: {}
+[46.623178] (-) TimerEvent: {}
+[46.724438] (-) TimerEvent: {}
+[46.825482] (-) TimerEvent: {}
+[46.926811] (-) TimerEvent: {}
+[47.028825] (-) TimerEvent: {}
+[47.130035] (-) TimerEvent: {}
+[47.231160] (-) TimerEvent: {}
+[47.332381] (-) TimerEvent: {}
+[47.433688] (-) TimerEvent: {}
+[47.535754] (-) TimerEvent: {}
+[47.638055] (-) TimerEvent: {}
+[47.739236] (-) TimerEvent: {}
+[47.840597] (-) TimerEvent: {}
+[47.941706] (-) TimerEvent: {}
+[48.043283] (-) TimerEvent: {}
+[48.144704] (-) TimerEvent: {}
+[48.246157] (-) TimerEvent: {}
+[48.347790] (-) TimerEvent: {}
+[48.449128] (-) TimerEvent: {}
+[48.550860] (-) TimerEvent: {}
+[48.652297] (-) TimerEvent: {}
+[48.753466] (-) TimerEvent: {}
+[48.854723] (-) TimerEvent: {}
+[48.955922] (-) TimerEvent: {}
+[49.057098] (-) TimerEvent: {}
+[49.158463] (-) TimerEvent: {}
+[49.259752] (-) TimerEvent: {}
+[49.361732] (-) TimerEvent: {}
+[49.463125] (-) TimerEvent: {}
+[49.564497] (-) TimerEvent: {}
+[49.665839] (-) TimerEvent: {}
+[49.766932] (-) TimerEvent: {}
+[49.868141] (-) TimerEvent: {}
+[49.970009] (-) TimerEvent: {}
+[50.071095] (-) TimerEvent: {}
+[50.172222] (-) TimerEvent: {}
+[50.273225] (-) TimerEvent: {}
+[50.374207] (-) TimerEvent: {}
+[50.475238] (-) TimerEvent: {}
+[50.576341] (-) TimerEvent: {}
+[50.677439] (-) TimerEvent: {}
+[50.778921] (-) TimerEvent: {}
+[50.880240] (-) TimerEvent: {}
+[50.982466] (-) TimerEvent: {}
+[51.084301] (-) TimerEvent: {}
+[51.190858] (-) TimerEvent: {}
+[51.292309] (-) TimerEvent: {}
+[51.394503] (-) TimerEvent: {}
+[51.498958] (-) TimerEvent: {}
+[51.601532] (-) TimerEvent: {}
+[51.704197] (-) TimerEvent: {}
+[51.805219] (-) TimerEvent: {}
+[51.913596] (-) TimerEvent: {}
+[52.015301] (-) TimerEvent: {}
+[52.117332] (-) TimerEvent: {}
+[52.218290] (-) TimerEvent: {}
+[52.319361] (-) TimerEvent: {}
+[52.422036] (-) TimerEvent: {}
+[52.523239] (-) TimerEvent: {}
+[52.624663] (-) TimerEvent: {}
+[52.725996] (-) TimerEvent: {}
+[52.828706] (-) TimerEvent: {}
+[52.931979] (-) TimerEvent: {}
+[53.038051] (-) TimerEvent: {}
+[53.139123] (-) TimerEvent: {}
+[53.240598] (-) TimerEvent: {}
+[53.341674] (-) TimerEvent: {}
+[53.442776] (-) TimerEvent: {}
+[53.544847] (-) TimerEvent: {}
+[53.646133] (-) TimerEvent: {}
+[53.747368] (-) TimerEvent: {}
+[53.849818] (-) TimerEvent: {}
+[53.951686] (-) TimerEvent: {}
+[54.053738] (-) TimerEvent: {}
+[54.154846] (-) TimerEvent: {}
+[54.256725] (-) TimerEvent: {}
+[54.359008] (-) TimerEvent: {}
+[54.460610] (-) TimerEvent: {}
+[54.566736] (-) TimerEvent: {}
+[54.669851] (-) TimerEvent: {}
+[54.771352] (-) TimerEvent: {}
+[54.872584] (-) TimerEvent: {}
+[54.975447] (-) TimerEvent: {}
+[55.076818] (-) TimerEvent: {}
+[55.179104] (-) TimerEvent: {}
+[55.281410] (-) TimerEvent: {}
+[55.382712] (-) TimerEvent: {}
+[55.484126] (-) TimerEvent: {}
+[55.586354] (-) TimerEvent: {}
+[55.689228] (-) TimerEvent: {}
+[55.790481] (-) TimerEvent: {}
+[55.892067] (-) TimerEvent: {}
+[55.995257] (-) TimerEvent: {}
+[56.096312] (-) TimerEvent: {}
+[56.197523] (-) TimerEvent: {}
+[56.298584] (-) TimerEvent: {}
+[56.400149] (-) TimerEvent: {}
+[56.503427] (-) TimerEvent: {}
+[56.604465] (-) TimerEvent: {}
+[56.706528] (-) TimerEvent: {}
+[56.807563] (-) TimerEvent: {}
+[56.908918] (-) TimerEvent: {}
+[57.010417] (-) TimerEvent: {}
+[57.112583] (-) TimerEvent: {}
+[57.213645] (-) TimerEvent: {}
+[57.315202] (-) TimerEvent: {}
+[57.416978] (-) TimerEvent: {}
+[57.518034] (-) TimerEvent: {}
+[57.619061] (-) TimerEvent: {}
+[57.721108] (-) TimerEvent: {}
+[57.822117] (-) TimerEvent: {}
+[57.923146] (-) TimerEvent: {}
+[58.024257] (-) TimerEvent: {}
+[58.125247] (-) TimerEvent: {}
+[58.227159] (-) TimerEvent: {}
+[58.328443] (-) TimerEvent: {}
+[58.429480] (-) TimerEvent: {}
+[58.530458] (-) TimerEvent: {}
+[58.631476] (-) TimerEvent: {}
+[58.732530] (-) TimerEvent: {}
+[58.833491] (-) TimerEvent: {}
+[58.934462] (-) TimerEvent: {}
+[59.035469] (-) TimerEvent: {}
+[59.136499] (-) TimerEvent: {}
+[59.237535] (-) TimerEvent: {}
+[59.338607] (-) TimerEvent: {}
+[59.439656] (-) TimerEvent: {}
+[59.540759] (-) TimerEvent: {}
+[59.641783] (-) TimerEvent: {}
+[59.742836] (-) TimerEvent: {}
+[59.843952] (-) TimerEvent: {}
+[59.945054] (-) TimerEvent: {}
+[60.046169] (-) TimerEvent: {}
+[60.147644] (-) TimerEvent: {}
+[60.248785] (-) TimerEvent: {}
+[60.349883] (-) TimerEvent: {}
+[60.451107] (-) TimerEvent: {}
+[60.552495] (-) TimerEvent: {}
+[60.653815] (-) TimerEvent: {}
+[60.756140] (-) TimerEvent: {}
+[60.857529] (-) TimerEvent: {}
+[60.959257] (-) TimerEvent: {}
+[61.060472] (-) TimerEvent: {}
+[61.161486] (-) TimerEvent: {}
+[61.262514] (-) TimerEvent: {}
+[61.363551] (-) TimerEvent: {}
+[61.464685] (-) TimerEvent: {}
+[61.565678] (-) TimerEvent: {}
+[61.666694] (-) TimerEvent: {}
+[61.767754] (-) TimerEvent: {}
+[61.868880] (-) TimerEvent: {}
+[61.969960] (-) TimerEvent: {}
+[62.071081] (-) TimerEvent: {}
+[62.172269] (-) TimerEvent: {}
+[62.273528] (-) TimerEvent: {}
+[62.374670] (-) TimerEvent: {}
+[62.476632] (-) TimerEvent: {}
+[62.579644] (-) TimerEvent: {}
+[62.683646] (-) TimerEvent: {}
+[62.785171] (-) TimerEvent: {}
+[62.888658] (-) TimerEvent: {}
+[62.992331] (-) TimerEvent: {}
+[63.095210] (-) TimerEvent: {}
+[63.196242] (-) TimerEvent: {}
+[63.297273] (-) TimerEvent: {}
+[63.398259] (-) TimerEvent: {}
+[63.499303] (-) TimerEvent: {}
+[63.601002] (-) TimerEvent: {}
+[63.702104] (-) TimerEvent: {}
+[63.803255] (-) TimerEvent: {}
+[63.905097] (-) TimerEvent: {}
+[64.006793] (-) TimerEvent: {}
+[64.107886] (-) TimerEvent: {}
+[64.209201] (-) TimerEvent: {}
+[64.310913] (-) TimerEvent: {}
+[64.412651] (-) TimerEvent: {}
+[64.514304] (-) TimerEvent: {}
+[64.615456] (-) TimerEvent: {}
+[64.716488] (-) TimerEvent: {}
+[64.817598] (-) TimerEvent: {}
+[64.918512] (-) TimerEvent: {}
+[65.019474] (-) TimerEvent: {}
+[65.120592] (-) TimerEvent: {}
+[65.221610] (-) TimerEvent: {}
+[65.322528] (-) TimerEvent: {}
+[65.423600] (-) TimerEvent: {}
+[65.524676] (-) TimerEvent: {}
+[65.626057] (-) TimerEvent: {}
+[65.728681] (-) TimerEvent: {}
+[65.829851] (-) TimerEvent: {}
+[65.930965] (-) TimerEvent: {}
+[66.032044] (-) TimerEvent: {}
+[66.133083] (-) TimerEvent: {}
+[66.234548] (-) TimerEvent: {}
+[66.335955] (-) TimerEvent: {}
+[66.437231] (-) TimerEvent: {}
+[66.538561] (-) TimerEvent: {}
+[66.640753] (-) TimerEvent: {}
+[66.741778] (-) TimerEvent: {}
+[66.844100] (-) TimerEvent: {}
+[66.945400] (-) TimerEvent: {}
+[67.047566] (-) TimerEvent: {}
+[67.151744] (-) TimerEvent: {}
+[67.255101] (-) TimerEvent: {}
+[67.358197] (-) TimerEvent: {}
+[67.460330] (-) TimerEvent: {}
+[67.561570] (-) TimerEvent: {}
+[67.662879] (-) TimerEvent: {}
+[67.764017] (-) TimerEvent: {}
+[67.865325] (-) TimerEvent: {}
+[67.966348] (-) TimerEvent: {}
+[68.068963] (-) TimerEvent: {}
+[68.170592] (-) TimerEvent: {}
+[68.272433] (-) TimerEvent: {}
+[68.374167] (-) TimerEvent: {}
+[68.475392] (-) TimerEvent: {}
+[68.576527] (-) TimerEvent: {}
+[68.677678] (-) TimerEvent: {}
+[68.778836] (-) TimerEvent: {}
+[68.880135] (-) TimerEvent: {}
+[68.981916] (-) TimerEvent: {}
+[69.083241] (-) TimerEvent: {}
+[69.188081] (-) TimerEvent: {}
+[69.289167] (-) TimerEvent: {}
+[69.390414] (-) TimerEvent: {}
+[69.492199] (-) TimerEvent: {}
+[69.594330] (-) TimerEvent: {}
+[69.695971] (-) TimerEvent: {}
+[69.797973] (-) TimerEvent: {}
+[69.899146] (-) TimerEvent: {}
+[70.002444] (-) TimerEvent: {}
+[70.103584] (-) TimerEvent: {}
+[70.204654] (-) TimerEvent: {}
+[70.305738] (-) TimerEvent: {}
+[70.406916] (-) TimerEvent: {}
+[70.508071] (-) TimerEvent: {}
+[70.609159] (-) TimerEvent: {}
+[70.710158] (-) TimerEvent: {}
+[70.811633] (-) TimerEvent: {}
+[70.913209] (-) TimerEvent: {}
+[71.015321] (-) TimerEvent: {}
+[71.112941] (vesc_ackermann) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_ackermann.so\x1b[0m\n'}
+[71.115439] (-) TimerEvent: {}
+[71.216659] (-) TimerEvent: {}
+[71.317762] (-) TimerEvent: {}
+[71.419745] (-) TimerEvent: {}
+[71.521005] (-) TimerEvent: {}
+[71.622171] (-) TimerEvent: {}
+[71.723338] (-) TimerEvent: {}
+[71.824611] (-) TimerEvent: {}
+[71.925861] (-) TimerEvent: {}
+[72.027170] (-) TimerEvent: {}
+[72.129558] (-) TimerEvent: {}
+[72.231025] (-) TimerEvent: {}
+[72.332579] (-) TimerEvent: {}
+[72.434249] (-) TimerEvent: {}
+[72.536386] (-) TimerEvent: {}
+[72.638989] (-) TimerEvent: {}
+[72.740605] (-) TimerEvent: {}
+[72.842665] (-) TimerEvent: {}
+[72.944060] (-) TimerEvent: {}
+[73.045350] (-) TimerEvent: {}
+[73.146545] (-) TimerEvent: {}
+[73.247912] (-) TimerEvent: {}
+[73.349121] (-) TimerEvent: {}
+[73.450499] (-) TimerEvent: {}
+[73.552145] (-) TimerEvent: {}
+[73.653781] (-) TimerEvent: {}
+[73.754974] (-) TimerEvent: {}
+[73.858938] (-) TimerEvent: {}
+[73.960720] (-) TimerEvent: {}
+[74.061959] (-) TimerEvent: {}
+[74.163253] (-) TimerEvent: {}
+[74.265338] (-) TimerEvent: {}
+[74.366478] (-) TimerEvent: {}
+[74.467682] (-) TimerEvent: {}
+[74.568812] (-) TimerEvent: {}
+[74.669912] (-) TimerEvent: {}
+[74.771080] (-) TimerEvent: {}
+[74.804176] (vesc_ackermann) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[74.854216] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[74.871540] (-) TimerEvent: {}
+[74.926545] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[74.972642] (-) TimerEvent: {}
+[75.076338] (-) TimerEvent: {}
+[75.186292] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[75.187565] (-) TimerEvent: {}
+[75.254153] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/f1tenth_ws/build/vesc_ackermann'], 'cwd': '/home/nvidia/f1tenth_ws/build/vesc_ackermann', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2804'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2324'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:57479'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2840,unix/ubuntu:/tmp/.ICE-unix/2840'), ('INVOCATION_ID', 'eeafa1c0166d468dacf9b3a13fed9e08'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:216dbad2-254a-4681-beef-edcb2da461b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/vesc_ackermann'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[75.288217] (-) TimerEvent: {}
+[75.316184] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[75.322391] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[75.329401] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node" to ""\n'}
+[75.332116] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[75.337422] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node" to ""\n'}
+[75.345205] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/include\n'}
+[75.346157] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann\n'}
+[75.346858] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[75.347457] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[75.348184] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[75.348793] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[75.349339] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[75.388383] (-) TimerEvent: {}
+[75.469081] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so" to ""\n'}
+[75.470208] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch\n'}
+[75.471177] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[75.471736] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[75.472611] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[75.473845] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[75.475133] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[75.476201] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[75.477140] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[75.478186] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[75.479214] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[75.480460] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[75.481552] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[75.482698] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[75.483736] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[75.485387] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[75.486645] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[75.488010] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[75.488598] (-) TimerEvent: {}
+[75.489389] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[75.490180] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[75.491163] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[75.492010] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[75.493027] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[75.506941] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[75.589361] (-) TimerEvent: {}
+[75.697377] (-) TimerEvent: {}
+[75.805126] (-) TimerEvent: {}
+[75.907134] (-) TimerEvent: {}
+[76.014451] (-) TimerEvent: {}
+[76.126137] (-) TimerEvent: {}
+[76.155286] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[76.172939] (-) EventReactorShutdown: {}

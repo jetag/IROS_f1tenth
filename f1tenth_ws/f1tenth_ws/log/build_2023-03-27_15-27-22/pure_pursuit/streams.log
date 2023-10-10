@@ -1,0 +1,83 @@
+[0.242s] Invoking command in '/home/nvidia/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake /home/nvidia/f1tenth_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/pure_pursuit
+[1.839s] -- The C compiler identification is GNU 9.4.0
+[3.102s] -- The CXX compiler identification is GNU 9.4.0
+[3.262s] -- Check for working C compiler: /usr/bin/cc
+[4.436s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.455s] -- Detecting C compiler ABI info
+[5.467s] -- Detecting C compiler ABI info - done
+[5.641s] -- Detecting C compile features
+[5.644s] -- Detecting C compile features - done
+[5.690s] -- Check for working CXX compiler: /usr/bin/c++
+[6.777s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.785s] -- Detecting CXX compiler ABI info
+[7.649s] -- Detecting CXX compiler ABI info - done
+[7.856s] -- Detecting CXX compile features
+[7.859s] -- Detecting CXX compile features - done
+[7.949s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[8.295s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[8.296s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.464s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[10.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.673s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[12.008s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[12.332s] -- Found FastRTPS: /opt/ros/galactic/include  
+[13.356s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.060s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[14.126s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[14.336s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[14.352s] -- Looking for pthread.h
+[15.262s] -- Looking for pthread.h - found
+[15.264s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[16.377s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[16.378s] -- Looking for pthread_create in pthreads
+[17.278s] -- Looking for pthread_create in pthreads - not found
+[17.288s] -- Looking for pthread_create in pthread
+[18.281s] -- Looking for pthread_create in pthread - found
+[18.308s] -- Found Threads: TRUE  
+[20.066s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[20.108s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[20.401s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[21.191s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/galactic/share/ackermann_msgs/cmake)
+[21.618s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[22.178s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[22.820s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[29.369s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[30.577s] -- Added test 'copyright' to check source files copyright and LICENSE
+[30.644s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[30.647s] -- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/pure_pursuit/include
+[30.648s] -- Configured cppcheck exclude dirs and/or files: 
+[30.670s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[30.671s] -- Configured cpplint exclude dirs and/or files: 
+[30.678s] -- Added test 'flake8' to check Python code syntax and style conventions
+[30.690s] -- Added test 'lint_cmake' to check CMake code style
+[30.699s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[30.722s] Invoked command in '/home/nvidia/f1tenth_ws/build/pure_pursuit' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/galactic /usr/bin/cmake /home/nvidia/f1tenth_ws/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/pure_pursuit
+[30.751s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 67, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 59, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 87, in build
+    rc = await self._reconfigure(args, env)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 182, in _reconfigure
+    buildfile = get_buildfile(cmake_cache)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 112, in get_buildfile
+    if 'Ninja' in generator:
+TypeError: argument of type 'NoneType' is not iterable

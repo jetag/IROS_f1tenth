@@ -1,0 +1,850 @@
+[0.000000] (-) TimerEvent: {}
+[0.001419] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002632] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.002844] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003510] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.003645] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.007887] (-) JobUnselected: {'identifier': 'particle_filter'}
+[0.008189] (-) JobUnselected: {'identifier': 'range_lib'}
+[0.008723] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.008892] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.009130] (-) JobUnselected: {'identifier': 'vesc'}
+[0.009277] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.009404] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.009619] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.013072] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.013606] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.098944] (-) TimerEvent: {}
+[0.110744] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.116600] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/f1tenth_ws/src/pure_pursuit', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/f1tenth_ws/install/pure_pursuit'], 'cwd': '/home/nvidia/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2876'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_driver/lib:/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2704'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:59455'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nvidia/f1tenth_ws/install/range_lib/bin:/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2913,unix/ubuntu:/tmp/.ICE-unix/2913'), ('INVOCATION_ID', '991d3b8c5b624e71b6f5431147d0e2c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/ackermann_mux:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:36b441ec-dfbf-4c8c-9cdc-9be25eb079c3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/pure_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/range_lib:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/ackermann_mux:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[0.199487] (-) TimerEvent: {}
+[0.301774] (-) TimerEvent: {}
+[0.402804] (-) TimerEvent: {}
+[0.504096] (-) TimerEvent: {}
+[0.538845] (pure_pursuit) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.604378] (-) TimerEvent: {}
+[0.705516] (-) TimerEvent: {}
+[0.807487] (-) TimerEvent: {}
+[0.897530] (pure_pursuit) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.907605] (-) TimerEvent: {}
+[0.927145] (pure_pursuit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.007919] (-) TimerEvent: {}
+[1.109271] (-) TimerEvent: {}
+[1.210354] (-) TimerEvent: {}
+[1.311408] (-) TimerEvent: {}
+[1.390033] (pure_pursuit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.394811] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.411681] (-) TimerEvent: {}
+[1.512860] (-) TimerEvent: {}
+[1.613968] (-) TimerEvent: {}
+[1.715035] (-) TimerEvent: {}
+[1.816119] (-) TimerEvent: {}
+[1.857694] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.916453] (-) TimerEvent: {}
+[1.917497] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.918977] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.931422] (pure_pursuit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.016696] (-) TimerEvent: {}
+[2.117818] (-) TimerEvent: {}
+[2.218905] (-) TimerEvent: {}
+[2.320111] (-) TimerEvent: {}
+[2.421346] (-) TimerEvent: {}
+[2.430235] (pure_pursuit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.437308] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.521588] (-) TimerEvent: {}
+[2.622712] (-) TimerEvent: {}
+[2.723762] (-) TimerEvent: {}
+[2.825165] (-) TimerEvent: {}
+[2.926269] (-) TimerEvent: {}
+[2.956468] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.014816] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.017440] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.026428] (-) TimerEvent: {}
+[3.041612] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[3.126665] (-) TimerEvent: {}
+[3.214353] (pure_pursuit) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.215409] (pure_pursuit) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.226832] (-) TimerEvent: {}
+[3.327799] (-) TimerEvent: {}
+[3.428810] (-) TimerEvent: {}
+[3.529852] (-) TimerEvent: {}
+[3.630941] (-) TimerEvent: {}
+[3.731923] (-) TimerEvent: {}
+[3.789820] (pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[3.832131] (-) TimerEvent: {}
+[3.933215] (-) TimerEvent: {}
+[4.034191] (-) TimerEvent: {}
+[4.135250] (-) TimerEvent: {}
+[4.163427] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.230421] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[4.235362] (-) TimerEvent: {}
+[4.336164] (-) TimerEvent: {}
+[4.437254] (-) TimerEvent: {}
+[4.538426] (-) TimerEvent: {}
+[4.639511] (-) TimerEvent: {}
+[4.740585] (-) TimerEvent: {}
+[4.843678] (-) TimerEvent: {}
+[4.856076] (pure_pursuit) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.943930] (-) TimerEvent: {}
+[5.020436] (pure_pursuit) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[5.044124] (-) TimerEvent: {}
+[5.145141] (-) TimerEvent: {}
+[5.246290] (-) TimerEvent: {}
+[5.347438] (-) TimerEvent: {}
+[5.448738] (-) TimerEvent: {}
+[5.501165] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.548956] (-) TimerEvent: {}
+[5.650049] (-) TimerEvent: {}
+[5.751149] (-) TimerEvent: {}
+[5.852277] (-) TimerEvent: {}
+[5.904279] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[5.931210] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[5.952466] (-) TimerEvent: {}
+[6.043098] (pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[6.047854] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.052650] (-) TimerEvent: {}
+[6.153599] (-) TimerEvent: {}
+[6.254765] (-) TimerEvent: {}
+[6.355889] (-) TimerEvent: {}
+[6.457151] (-) TimerEvent: {}
+[6.553565] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.555350] (pure_pursuit) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.557241] (-) TimerEvent: {}
+[6.658210] (-) TimerEvent: {}
+[6.759509] (-) TimerEvent: {}
+[6.860673] (-) TimerEvent: {}
+[6.961632] (-) TimerEvent: {}
+[7.053752] (pure_pursuit) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.055346] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.061821] (-) TimerEvent: {}
+[7.162927] (-) TimerEvent: {}
+[7.264005] (-) TimerEvent: {}
+[7.365105] (-) TimerEvent: {}
+[7.462614] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.465031] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.465804] (-) TimerEvent: {}
+[7.566839] (-) TimerEvent: {}
+[7.667932] (-) TimerEvent: {}
+[7.769148] (-) TimerEvent: {}
+[7.870338] (-) TimerEvent: {}
+[7.930761] (pure_pursuit) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[7.937137] (pure_pursuit) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.970487] (-) TimerEvent: {}
+[8.071450] (-) TimerEvent: {}
+[8.172555] (-) TimerEvent: {}
+[8.273638] (-) TimerEvent: {}
+[8.374741] (-) TimerEvent: {}
+[8.475827] (-) TimerEvent: {}
+[8.576971] (-) TimerEvent: {}
+[8.677949] (-) TimerEvent: {}
+[8.779330] (-) TimerEvent: {}
+[8.798221] (pure_pursuit) StdoutLine: {'line': b'-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[8.816778] (pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[8.879463] (-) TimerEvent: {}
+[8.980525] (-) TimerEvent: {}
+[8.996381] (pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[9.080723] (-) TimerEvent: {}
+[9.181817] (-) TimerEvent: {}
+[9.282833] (-) TimerEvent: {}
+[9.330385] (pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/galactic/share/ackermann_msgs/cmake)\n'}
+[9.383052] (-) TimerEvent: {}
+[9.484028] (-) TimerEvent: {}
+[9.505433] (pure_pursuit) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[9.584257] (-) TimerEvent: {}
+[9.685327] (-) TimerEvent: {}
+[9.786269] (-) TimerEvent: {}
+[9.832184] (pure_pursuit) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[9.886499] (-) TimerEvent: {}
+[9.987507] (-) TimerEvent: {}
+[10.088633] (-) TimerEvent: {}
+[10.186918] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[10.188742] (-) TimerEvent: {}
+[10.289543] (-) TimerEvent: {}
+[10.390569] (-) TimerEvent: {}
+[10.491624] (-) TimerEvent: {}
+[10.592759] (-) TimerEvent: {}
+[10.693845] (-) TimerEvent: {}
+[10.794923] (-) TimerEvent: {}
+[10.895941] (-) TimerEvent: {}
+[10.997166] (-) TimerEvent: {}
+[11.098200] (-) TimerEvent: {}
+[11.199256] (-) TimerEvent: {}
+[11.300283] (-) TimerEvent: {}
+[11.401362] (-) TimerEvent: {}
+[11.502429] (-) TimerEvent: {}
+[11.603492] (-) TimerEvent: {}
+[11.704558] (-) TimerEvent: {}
+[11.805645] (-) TimerEvent: {}
+[11.906638] (-) TimerEvent: {}
+[12.007652] (-) TimerEvent: {}
+[12.108734] (-) TimerEvent: {}
+[12.209746] (-) TimerEvent: {}
+[12.310802] (-) TimerEvent: {}
+[12.411965] (-) TimerEvent: {}
+[12.513037] (-) TimerEvent: {}
+[12.614079] (-) TimerEvent: {}
+[12.715118] (-) TimerEvent: {}
+[12.816459] (-) TimerEvent: {}
+[12.917442] (-) TimerEvent: {}
+[13.018432] (-) TimerEvent: {}
+[13.119728] (-) TimerEvent: {}
+[13.221132] (-) TimerEvent: {}
+[13.322189] (-) TimerEvent: {}
+[13.423909] (-) TimerEvent: {}
+[13.525054] (-) TimerEvent: {}
+[13.626387] (-) TimerEvent: {}
+[13.727341] (-) TimerEvent: {}
+[13.828611] (-) TimerEvent: {}
+[13.874725] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[13.928801] (-) TimerEvent: {}
+[14.029747] (-) TimerEvent: {}
+[14.130705] (-) TimerEvent: {}
+[14.231679] (-) TimerEvent: {}
+[14.332798] (-) TimerEvent: {}
+[14.381222] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.399049] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.401226] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/pure_pursuit/include\n'}
+[14.401710] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.418621] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[14.419266] (pure_pursuit) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[14.424015] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[14.430850] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.432855] (-) TimerEvent: {}
+[14.436579] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[14.452833] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.453609] (pure_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.458250] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.494167] (pure_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.533144] (-) TimerEvent: {}
+[14.593400] (pure_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[14.604796] (pure_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/f1tenth_ws/build/pure_pursuit\n'}
+[14.633386] (-) TimerEvent: {}
+[14.652882] (pure_pursuit) CommandEnded: {'returncode': 0}
+[14.657953] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[14.663386] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/f1tenth_ws/build/pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2876'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_driver/lib:/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2704'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:59455'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nvidia/f1tenth_ws/install/range_lib/bin:/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2913,unix/ubuntu:/tmp/.ICE-unix/2913'), ('INVOCATION_ID', '991d3b8c5b624e71b6f5431147d0e2c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/ackermann_mux:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:36b441ec-dfbf-4c8c-9cdc-9be25eb079c3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/pure_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/range_lib:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/ackermann_mux:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[14.733902] (-) TimerEvent: {}
+[14.835465] (-) TimerEvent: {}
+[14.847997] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[14.935701] (-) TimerEvent: {}
+[14.977852] (pure_pursuit) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[15.035944] (-) TimerEvent: {}
+[15.136937] (-) TimerEvent: {}
+[15.237799] (-) TimerEvent: {}
+[15.324470] (pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[15.337949] (-) TimerEvent: {}
+[15.438880] (-) TimerEvent: {}
+[15.521115] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.538458] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[15.539128] (-) TimerEvent: {}
+[15.640063] (-) TimerEvent: {}
+[15.741896] (-) TimerEvent: {}
+[15.843096] (-) TimerEvent: {}
+[15.944232] (-) TimerEvent: {}
+[16.045475] (-) TimerEvent: {}
+[16.146542] (-) TimerEvent: {}
+[16.175751] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.246782] (-) TimerEvent: {}
+[16.347741] (-) TimerEvent: {}
+[16.434044] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[16.444199] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[16.447831] (-) TimerEvent: {}
+[16.533966] (pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[16.548008] (-) TimerEvent: {}
+[16.648932] (-) TimerEvent: {}
+[16.749969] (-) TimerEvent: {}
+[16.850939] (-) TimerEvent: {}
+[16.951950] (-) TimerEvent: {}
+[17.053050] (-) TimerEvent: {}
+[17.154155] (-) TimerEvent: {}
+[17.173055] (pure_pursuit) StdoutLine: {'line': b'-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[17.174005] (pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[17.254369] (-) TimerEvent: {}
+[17.319703] (pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[17.354548] (-) TimerEvent: {}
+[17.455730] (-) TimerEvent: {}
+[17.556823] (-) TimerEvent: {}
+[17.614015] (pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/galactic/share/ackermann_msgs/cmake)\n'}
+[17.656980] (-) TimerEvent: {}
+[17.757885] (-) TimerEvent: {}
+[17.759269] (pure_pursuit) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[17.858122] (-) TimerEvent: {}
+[17.959152] (-) TimerEvent: {}
+[18.051674] (pure_pursuit) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[18.059357] (-) TimerEvent: {}
+[18.160270] (-) TimerEvent: {}
+[18.261306] (-) TimerEvent: {}
+[18.345752] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[18.361432] (-) TimerEvent: {}
+[18.462314] (-) TimerEvent: {}
+[18.563327] (-) TimerEvent: {}
+[18.664392] (-) TimerEvent: {}
+[18.765400] (-) TimerEvent: {}
+[18.866389] (-) TimerEvent: {}
+[18.967382] (-) TimerEvent: {}
+[19.068457] (-) TimerEvent: {}
+[19.169466] (-) TimerEvent: {}
+[19.270491] (-) TimerEvent: {}
+[19.371592] (-) TimerEvent: {}
+[19.472691] (-) TimerEvent: {}
+[19.573741] (-) TimerEvent: {}
+[19.674846] (-) TimerEvent: {}
+[19.775928] (-) TimerEvent: {}
+[19.877029] (-) TimerEvent: {}
+[19.978062] (-) TimerEvent: {}
+[20.071013] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[20.078202] (-) TimerEvent: {}
+[20.179204] (-) TimerEvent: {}
+[20.280132] (-) TimerEvent: {}
+[20.381162] (-) TimerEvent: {}
+[20.435426] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[20.450781] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[20.452635] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/f1tenth_ws/src/pure_pursuit/include\n'}
+[20.453317] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[20.467048] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[20.467656] (pure_pursuit) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[20.470177] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[20.474779] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[20.477901] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[20.481251] (-) TimerEvent: {}
+[20.491859] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[20.492630] (pure_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[20.495080] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[20.522692] (pure_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.581598] (-) TimerEvent: {}
+[20.622344] (pure_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[20.635418] (pure_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/f1tenth_ws/build/pure_pursuit\n'}
+[20.681921] (-) TimerEvent: {}
+[20.782981] (-) TimerEvent: {}
+[20.792704] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_copy_pure_pursuit\x1b[0m\n'}
+[20.883230] (-) TimerEvent: {}
+[20.913849] (pure_pursuit) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_pure_pursuit\n'}
+[20.981781] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pure_pursuit_node\x1b[0m\n'}
+[20.983351] (-) TimerEvent: {}
+[21.084194] (-) TimerEvent: {}
+[21.185261] (-) TimerEvent: {}
+[21.286281] (-) TimerEvent: {}
+[21.387302] (-) TimerEvent: {}
+[21.477709] (pure_pursuit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o\x1b[0m\n'}
+[21.487559] (-) TimerEvent: {}
+[21.588518] (-) TimerEvent: {}
+[21.689562] (-) TimerEvent: {}
+[21.790625] (-) TimerEvent: {}
+[21.891672] (-) TimerEvent: {}
+[21.992855] (-) TimerEvent: {}
+[22.094049] (-) TimerEvent: {}
+[22.195179] (-) TimerEvent: {}
+[22.296270] (-) TimerEvent: {}
+[22.397474] (-) TimerEvent: {}
+[22.498653] (-) TimerEvent: {}
+[22.599722] (-) TimerEvent: {}
+[22.700807] (-) TimerEvent: {}
+[22.801856] (-) TimerEvent: {}
+[22.902921] (-) TimerEvent: {}
+[23.003942] (-) TimerEvent: {}
+[23.105114] (-) TimerEvent: {}
+[23.206147] (-) TimerEvent: {}
+[23.307237] (-) TimerEvent: {}
+[23.408546] (-) TimerEvent: {}
+[23.509702] (-) TimerEvent: {}
+[23.610873] (-) TimerEvent: {}
+[23.711932] (-) TimerEvent: {}
+[23.813051] (-) TimerEvent: {}
+[23.914141] (-) TimerEvent: {}
+[24.015248] (-) TimerEvent: {}
+[24.116411] (-) TimerEvent: {}
+[24.217479] (-) TimerEvent: {}
+[24.318549] (-) TimerEvent: {}
+[24.419633] (-) TimerEvent: {}
+[24.520787] (-) TimerEvent: {}
+[24.621883] (-) TimerEvent: {}
+[24.722985] (-) TimerEvent: {}
+[24.824080] (-) TimerEvent: {}
+[24.925180] (-) TimerEvent: {}
+[25.026249] (-) TimerEvent: {}
+[25.127370] (-) TimerEvent: {}
+[25.228631] (-) TimerEvent: {}
+[25.329711] (-) TimerEvent: {}
+[25.430858] (-) TimerEvent: {}
+[25.531923] (-) TimerEvent: {}
+[25.633090] (-) TimerEvent: {}
+[25.734167] (-) TimerEvent: {}
+[25.835252] (-) TimerEvent: {}
+[25.936356] (-) TimerEvent: {}
+[26.037543] (-) TimerEvent: {}
+[26.138578] (-) TimerEvent: {}
+[26.239610] (-) TimerEvent: {}
+[26.340717] (-) TimerEvent: {}
+[26.441914] (-) TimerEvent: {}
+[26.542991] (-) TimerEvent: {}
+[26.644062] (-) TimerEvent: {}
+[26.745226] (-) TimerEvent: {}
+[26.846312] (-) TimerEvent: {}
+[26.947352] (-) TimerEvent: {}
+[27.048423] (-) TimerEvent: {}
+[27.149490] (-) TimerEvent: {}
+[27.250572] (-) TimerEvent: {}
+[27.351603] (-) TimerEvent: {}
+[27.452718] (-) TimerEvent: {}
+[27.553782] (-) TimerEvent: {}
+[27.654803] (-) TimerEvent: {}
+[27.755835] (-) TimerEvent: {}
+[27.856952] (-) TimerEvent: {}
+[27.957968] (-) TimerEvent: {}
+[28.058922] (-) TimerEvent: {}
+[28.159991] (-) TimerEvent: {}
+[28.261180] (-) TimerEvent: {}
+[28.362224] (-) TimerEvent: {}
+[28.463370] (-) TimerEvent: {}
+[28.564544] (-) TimerEvent: {}
+[28.665586] (-) TimerEvent: {}
+[28.766499] (-) TimerEvent: {}
+[28.867542] (-) TimerEvent: {}
+[28.968686] (-) TimerEvent: {}
+[29.069695] (-) TimerEvent: {}
+[29.170748] (-) TimerEvent: {}
+[29.271866] (-) TimerEvent: {}
+[29.373049] (-) TimerEvent: {}
+[29.474168] (-) TimerEvent: {}
+[29.575311] (-) TimerEvent: {}
+[29.676621] (-) TimerEvent: {}
+[29.777695] (-) TimerEvent: {}
+[29.878796] (-) TimerEvent: {}
+[29.979830] (-) TimerEvent: {}
+[30.080846] (-) TimerEvent: {}
+[30.181808] (-) TimerEvent: {}
+[30.282777] (-) TimerEvent: {}
+[30.383839] (-) TimerEvent: {}
+[30.484890] (-) TimerEvent: {}
+[30.585914] (-) TimerEvent: {}
+[30.686948] (-) TimerEvent: {}
+[30.787991] (-) TimerEvent: {}
+[30.889007] (-) TimerEvent: {}
+[30.989840] (-) TimerEvent: {}
+[31.090793] (-) TimerEvent: {}
+[31.191707] (-) TimerEvent: {}
+[31.292787] (-) TimerEvent: {}
+[31.393808] (-) TimerEvent: {}
+[31.494812] (-) TimerEvent: {}
+[31.595877] (-) TimerEvent: {}
+[31.696884] (-) TimerEvent: {}
+[31.797843] (-) TimerEvent: {}
+[31.898836] (-) TimerEvent: {}
+[31.999794] (-) TimerEvent: {}
+[32.100774] (-) TimerEvent: {}
+[32.201788] (-) TimerEvent: {}
+[32.302690] (-) TimerEvent: {}
+[32.403526] (-) TimerEvent: {}
+[32.504461] (-) TimerEvent: {}
+[32.605497] (-) TimerEvent: {}
+[32.706529] (-) TimerEvent: {}
+[32.807483] (-) TimerEvent: {}
+[32.908555] (-) TimerEvent: {}
+[33.009518] (-) TimerEvent: {}
+[33.110506] (-) TimerEvent: {}
+[33.211514] (-) TimerEvent: {}
+[33.312710] (-) TimerEvent: {}
+[33.413768] (-) TimerEvent: {}
+[33.514780] (-) TimerEvent: {}
+[33.615703] (-) TimerEvent: {}
+[33.716819] (-) TimerEvent: {}
+[33.817878] (-) TimerEvent: {}
+[33.918906] (-) TimerEvent: {}
+[34.019806] (-) TimerEvent: {}
+[34.120790] (-) TimerEvent: {}
+[34.221758] (-) TimerEvent: {}
+[34.322706] (-) TimerEvent: {}
+[34.423732] (-) TimerEvent: {}
+[34.524841] (-) TimerEvent: {}
+[34.578992] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::pose_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.580094] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:104:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[34.580727] (pure_pursuit) StderrLine: {'line': b'  104 |       for(int i=0; \x1b[01;35m\x1b[Ki<waypoints.size()\x1b[m\x1b[K; ++i)\n'}
+[34.581133] (pure_pursuit) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.581525] (pure_pursuit) StderrLine: {'line': b'\n'}
+[34.625096] (-) TimerEvent: {}
+[34.658677] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::visualize_path_points()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.659516] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:168:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[34.660030] (pure_pursuit) StderrLine: {'line': b'  168 |       for(int i=0; \x1b[01;35m\x1b[Ki<waypoints.size()\x1b[m\x1b[K; ++i)\n'}
+[34.660520] (pure_pursuit) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.660916] (pure_pursuit) StderrLine: {'line': b'\n'}
+[34.725312] (-) TimerEvent: {}
+[34.826319] (-) TimerEvent: {}
+[34.927394] (-) TimerEvent: {}
+[35.028457] (-) TimerEvent: {}
+[35.129471] (-) TimerEvent: {}
+[35.230556] (-) TimerEvent: {}
+[35.331578] (-) TimerEvent: {}
+[35.432678] (-) TimerEvent: {}
+[35.533742] (-) TimerEvent: {}
+[35.634743] (-) TimerEvent: {}
+[35.735732] (-) TimerEvent: {}
+[35.836765] (-) TimerEvent: {}
+[35.937761] (-) TimerEvent: {}
+[36.038779] (-) TimerEvent: {}
+[36.140263] (-) TimerEvent: {}
+[36.241451] (-) TimerEvent: {}
+[36.342595] (-) TimerEvent: {}
+[36.443734] (-) TimerEvent: {}
+[36.544886] (-) TimerEvent: {}
+[36.645974] (-) TimerEvent: {}
+[36.747090] (-) TimerEvent: {}
+[36.848184] (-) TimerEvent: {}
+[36.949274] (-) TimerEvent: {}
+[37.050300] (-) TimerEvent: {}
+[37.151343] (-) TimerEvent: {}
+[37.252452] (-) TimerEvent: {}
+[37.353462] (-) TimerEvent: {}
+[37.454529] (-) TimerEvent: {}
+[37.555643] (-) TimerEvent: {}
+[37.656745] (-) TimerEvent: {}
+[37.757826] (-) TimerEvent: {}
+[37.858858] (-) TimerEvent: {}
+[37.959951] (-) TimerEvent: {}
+[38.061139] (-) TimerEvent: {}
+[38.162216] (-) TimerEvent: {}
+[38.263257] (-) TimerEvent: {}
+[38.364460] (-) TimerEvent: {}
+[38.465472] (-) TimerEvent: {}
+[38.566598] (-) TimerEvent: {}
+[38.667631] (-) TimerEvent: {}
+[38.768869] (-) TimerEvent: {}
+[38.869962] (-) TimerEvent: {}
+[38.971055] (-) TimerEvent: {}
+[39.072197] (-) TimerEvent: {}
+[39.173391] (-) TimerEvent: {}
+[39.274530] (-) TimerEvent: {}
+[39.375778] (-) TimerEvent: {}
+[39.477442] (-) TimerEvent: {}
+[39.579211] (-) TimerEvent: {}
+[39.680421] (-) TimerEvent: {}
+[39.781516] (-) TimerEvent: {}
+[39.882636] (-) TimerEvent: {}
+[39.984041] (-) TimerEvent: {}
+[40.085238] (-) TimerEvent: {}
+[40.186326] (-) TimerEvent: {}
+[40.287448] (-) TimerEvent: {}
+[40.388566] (-) TimerEvent: {}
+[40.489636] (-) TimerEvent: {}
+[40.590729] (-) TimerEvent: {}
+[40.691846] (-) TimerEvent: {}
+[40.792941] (-) TimerEvent: {}
+[40.894075] (-) TimerEvent: {}
+[40.995192] (-) TimerEvent: {}
+[41.096286] (-) TimerEvent: {}
+[41.197467] (-) TimerEvent: {}
+[41.298592] (-) TimerEvent: {}
+[41.399670] (-) TimerEvent: {}
+[41.500848] (-) TimerEvent: {}
+[41.601981] (-) TimerEvent: {}
+[41.703073] (-) TimerEvent: {}
+[41.804229] (-) TimerEvent: {}
+[41.905531] (-) TimerEvent: {}
+[42.006583] (-) TimerEvent: {}
+[42.107649] (-) TimerEvent: {}
+[42.208809] (-) TimerEvent: {}
+[42.309867] (-) TimerEvent: {}
+[42.411025] (-) TimerEvent: {}
+[42.512090] (-) TimerEvent: {}
+[42.613295] (-) TimerEvent: {}
+[42.714336] (-) TimerEvent: {}
+[42.815402] (-) TimerEvent: {}
+[42.916560] (-) TimerEvent: {}
+[43.017619] (-) TimerEvent: {}
+[43.118667] (-) TimerEvent: {}
+[43.219829] (-) TimerEvent: {}
+[43.321015] (-) TimerEvent: {}
+[43.422162] (-) TimerEvent: {}
+[43.523293] (-) TimerEvent: {}
+[43.624535] (-) TimerEvent: {}
+[43.725668] (-) TimerEvent: {}
+[43.826808] (-) TimerEvent: {}
+[43.927895] (-) TimerEvent: {}
+[44.029017] (-) TimerEvent: {}
+[44.130087] (-) TimerEvent: {}
+[44.231128] (-) TimerEvent: {}
+[44.332196] (-) TimerEvent: {}
+[44.433371] (-) TimerEvent: {}
+[44.534411] (-) TimerEvent: {}
+[44.635571] (-) TimerEvent: {}
+[44.736862] (-) TimerEvent: {}
+[44.838105] (-) TimerEvent: {}
+[44.939207] (-) TimerEvent: {}
+[45.040418] (-) TimerEvent: {}
+[45.141563] (-) TimerEvent: {}
+[45.242699] (-) TimerEvent: {}
+[45.343818] (-) TimerEvent: {}
+[45.445073] (-) TimerEvent: {}
+[45.546307] (-) TimerEvent: {}
+[45.647415] (-) TimerEvent: {}
+[45.748566] (-) TimerEvent: {}
+[45.849764] (-) TimerEvent: {}
+[45.950886] (-) TimerEvent: {}
+[46.051970] (-) TimerEvent: {}
+[46.153477] (-) TimerEvent: {}
+[46.254581] (-) TimerEvent: {}
+[46.355966] (-) TimerEvent: {}
+[46.457147] (-) TimerEvent: {}
+[46.558609] (-) TimerEvent: {}
+[46.659789] (-) TimerEvent: {}
+[46.761029] (-) TimerEvent: {}
+[46.862203] (-) TimerEvent: {}
+[46.963707] (-) TimerEvent: {}
+[47.065239] (-) TimerEvent: {}
+[47.166656] (-) TimerEvent: {}
+[47.267748] (-) TimerEvent: {}
+[47.369227] (-) TimerEvent: {}
+[47.470292] (-) TimerEvent: {}
+[47.571319] (-) TimerEvent: {}
+[47.672459] (-) TimerEvent: {}
+[47.773490] (-) TimerEvent: {}
+[47.874584] (-) TimerEvent: {}
+[47.975669] (-) TimerEvent: {}
+[48.076835] (-) TimerEvent: {}
+[48.177930] (-) TimerEvent: {}
+[48.279046] (-) TimerEvent: {}
+[48.380169] (-) TimerEvent: {}
+[48.481292] (-) TimerEvent: {}
+[48.582376] (-) TimerEvent: {}
+[48.683508] (-) TimerEvent: {}
+[48.784697] (-) TimerEvent: {}
+[48.885736] (-) TimerEvent: {}
+[48.986822] (-) TimerEvent: {}
+[49.087901] (-) TimerEvent: {}
+[49.189039] (-) TimerEvent: {}
+[49.290155] (-) TimerEvent: {}
+[49.391251] (-) TimerEvent: {}
+[49.492343] (-) TimerEvent: {}
+[49.593425] (-) TimerEvent: {}
+[49.694484] (-) TimerEvent: {}
+[49.795524] (-) TimerEvent: {}
+[49.896586] (-) TimerEvent: {}
+[49.997685] (-) TimerEvent: {}
+[50.098755] (-) TimerEvent: {}
+[50.199825] (-) TimerEvent: {}
+[50.300937] (-) TimerEvent: {}
+[50.401971] (-) TimerEvent: {}
+[50.503025] (-) TimerEvent: {}
+[50.604056] (-) TimerEvent: {}
+[50.705152] (-) TimerEvent: {}
+[50.806240] (-) TimerEvent: {}
+[50.907628] (-) TimerEvent: {}
+[51.008828] (-) TimerEvent: {}
+[51.110299] (-) TimerEvent: {}
+[51.211399] (-) TimerEvent: {}
+[51.312573] (-) TimerEvent: {}
+[51.413650] (-) TimerEvent: {}
+[51.514784] (-) TimerEvent: {}
+[51.615844] (-) TimerEvent: {}
+[51.717011] (-) TimerEvent: {}
+[51.818130] (-) TimerEvent: {}
+[51.919267] (-) TimerEvent: {}
+[52.020363] (-) TimerEvent: {}
+[52.121423] (-) TimerEvent: {}
+[52.222507] (-) TimerEvent: {}
+[52.323593] (-) TimerEvent: {}
+[52.424705] (-) TimerEvent: {}
+[52.525734] (-) TimerEvent: {}
+[52.626855] (-) TimerEvent: {}
+[52.727924] (-) TimerEvent: {}
+[52.829091] (-) TimerEvent: {}
+[52.930187] (-) TimerEvent: {}
+[53.031246] (-) TimerEvent: {}
+[53.132468] (-) TimerEvent: {}
+[53.233505] (-) TimerEvent: {}
+[53.334596] (-) TimerEvent: {}
+[53.435687] (-) TimerEvent: {}
+[53.536861] (-) TimerEvent: {}
+[53.637957] (-) TimerEvent: {}
+[53.739132] (-) TimerEvent: {}
+[53.840237] (-) TimerEvent: {}
+[53.941401] (-) TimerEvent: {}
+[54.042501] (-) TimerEvent: {}
+[54.143567] (-) TimerEvent: {}
+[54.244687] (-) TimerEvent: {}
+[54.345808] (-) TimerEvent: {}
+[54.446883] (-) TimerEvent: {}
+[54.547969] (-) TimerEvent: {}
+[54.649189] (-) TimerEvent: {}
+[54.750371] (-) TimerEvent: {}
+[54.851453] (-) TimerEvent: {}
+[54.952601] (-) TimerEvent: {}
+[55.053679] (-) TimerEvent: {}
+[55.154751] (-) TimerEvent: {}
+[55.255806] (-) TimerEvent: {}
+[55.356944] (-) TimerEvent: {}
+[55.457988] (-) TimerEvent: {}
+[55.559074] (-) TimerEvent: {}
+[55.660138] (-) TimerEvent: {}
+[55.761288] (-) TimerEvent: {}
+[55.862395] (-) TimerEvent: {}
+[55.963469] (-) TimerEvent: {}
+[56.064555] (-) TimerEvent: {}
+[56.165647] (-) TimerEvent: {}
+[56.266669] (-) TimerEvent: {}
+[56.367760] (-) TimerEvent: {}
+[56.468892] (-) TimerEvent: {}
+[56.569990] (-) TimerEvent: {}
+[56.671086] (-) TimerEvent: {}
+[56.772215] (-) TimerEvent: {}
+[56.873358] (-) TimerEvent: {}
+[56.974403] (-) TimerEvent: {}
+[57.075508] (-) TimerEvent: {}
+[57.176674] (-) TimerEvent: {}
+[57.277707] (-) TimerEvent: {}
+[57.378786] (-) TimerEvent: {}
+[57.479840] (-) TimerEvent: {}
+[57.581030] (-) TimerEvent: {}
+[57.682173] (-) TimerEvent: {}
+[57.783288] (-) TimerEvent: {}
+[57.884442] (-) TimerEvent: {}
+[57.985524] (-) TimerEvent: {}
+[58.086652] (-) TimerEvent: {}
+[58.187744] (-) TimerEvent: {}
+[58.288910] (-) TimerEvent: {}
+[58.389957] (-) TimerEvent: {}
+[58.491196] (-) TimerEvent: {}
+[58.592514] (-) TimerEvent: {}
+[58.693648] (-) TimerEvent: {}
+[58.794870] (-) TimerEvent: {}
+[58.896090] (-) TimerEvent: {}
+[58.997304] (-) TimerEvent: {}
+[59.098455] (-) TimerEvent: {}
+[59.199652] (-) TimerEvent: {}
+[59.300887] (-) TimerEvent: {}
+[59.402064] (-) TimerEvent: {}
+[59.503287] (-) TimerEvent: {}
+[59.604615] (-) TimerEvent: {}
+[59.705768] (-) TimerEvent: {}
+[59.806951] (-) TimerEvent: {}
+[59.908649] (-) TimerEvent: {}
+[60.010089] (-) TimerEvent: {}
+[60.111465] (-) TimerEvent: {}
+[60.212547] (-) TimerEvent: {}
+[60.313706] (-) TimerEvent: {}
+[60.414757] (-) TimerEvent: {}
+[60.515807] (-) TimerEvent: {}
+[60.616899] (-) TimerEvent: {}
+[60.718025] (-) TimerEvent: {}
+[60.819244] (-) TimerEvent: {}
+[60.920417] (-) TimerEvent: {}
+[61.021468] (-) TimerEvent: {}
+[61.122502] (-) TimerEvent: {}
+[61.223576] (-) TimerEvent: {}
+[61.324803] (-) TimerEvent: {}
+[61.425861] (-) TimerEvent: {}
+[61.526992] (-) TimerEvent: {}
+[61.628039] (-) TimerEvent: {}
+[61.655029] (pure_pursuit) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pure_pursuit_node\x1b[0m\n'}
+[61.728275] (-) TimerEvent: {}
+[61.829297] (-) TimerEvent: {}
+[61.931268] (-) TimerEvent: {}
+[62.033062] (-) TimerEvent: {}
+[62.134302] (-) TimerEvent: {}
+[62.235614] (-) TimerEvent: {}
+[62.337396] (-) TimerEvent: {}
+[62.438845] (-) TimerEvent: {}
+[62.540567] (-) TimerEvent: {}
+[62.642049] (-) TimerEvent: {}
+[62.743521] (-) TimerEvent: {}
+[62.845102] (-) TimerEvent: {}
+[62.946530] (-) TimerEvent: {}
+[63.047796] (-) TimerEvent: {}
+[63.149140] (-) TimerEvent: {}
+[63.250491] (-) TimerEvent: {}
+[63.351938] (-) TimerEvent: {}
+[63.453350] (-) TimerEvent: {}
+[63.554558] (-) TimerEvent: {}
+[63.615005] (pure_pursuit) StdoutLine: {'line': b'[100%] Built target pure_pursuit_node\n'}
+[63.654764] (-) TimerEvent: {}
+[63.680830] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_copy_pure_pursuit_setup\x1b[0m\n'}
+[63.754977] (-) TimerEvent: {}
+[63.804277] (pure_pursuit) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_pure_pursuit_setup\n'}
+[63.855190] (-) TimerEvent: {}
+[63.872295] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_build_pure_pursuit_egg\x1b[0m\n'}
+[63.955442] (-) TimerEvent: {}
+[64.056479] (-) TimerEvent: {}
+[64.157382] (-) TimerEvent: {}
+[64.258340] (-) TimerEvent: {}
+[64.359357] (-) TimerEvent: {}
+[64.460252] (-) TimerEvent: {}
+[64.561302] (-) TimerEvent: {}
+[64.662343] (-) TimerEvent: {}
+[64.763333] (-) TimerEvent: {}
+[64.864425] (-) TimerEvent: {}
+[64.965338] (-) TimerEvent: {}
+[65.066305] (-) TimerEvent: {}
+[65.167280] (-) TimerEvent: {}
+[65.268275] (-) TimerEvent: {}
+[65.369304] (-) TimerEvent: {}
+[65.470297] (-) TimerEvent: {}
+[65.571327] (pure_pursuit) StderrLine: {'line': b"/home/nvidia/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[65.572182] (-) TimerEvent: {}
+[65.572794] (pure_pursuit) StderrLine: {'line': b'  warnings.warn(\n'}
+[65.573933] (pure_pursuit) StderrLine: {'line': b"/home/nvidia/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[65.574379] (pure_pursuit) StderrLine: {'line': b'  warnings.warn(\n'}
+[65.672523] (-) TimerEvent: {}
+[65.773535] (-) TimerEvent: {}
+[65.874550] (-) TimerEvent: {}
+[65.961164] (pure_pursuit) StdoutLine: {'line': b'running egg_info\n'}
+[65.966358] (pure_pursuit) StdoutLine: {'line': b'creating pure_pursuit.egg-info\n'}
+[65.974715] (-) TimerEvent: {}
+[66.059465] (pure_pursuit) StdoutLine: {'line': b'writing pure_pursuit.egg-info/PKG-INFO\n'}
+[66.060489] (pure_pursuit) StdoutLine: {'line': b'writing dependency_links to pure_pursuit.egg-info/dependency_links.txt\n'}
+[66.061845] (pure_pursuit) StdoutLine: {'line': b'writing top-level names to pure_pursuit.egg-info/top_level.txt\n'}
+[66.068619] (pure_pursuit) StdoutLine: {'line': b"writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[66.074884] (-) TimerEvent: {}
+[66.175650] (-) TimerEvent: {}
+[66.276726] (-) TimerEvent: {}
+[66.346135] (pure_pursuit) StdoutLine: {'line': b"reading manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[66.349291] (pure_pursuit) StdoutLine: {'line': b"writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[66.376886] (-) TimerEvent: {}
+[66.477782] (-) TimerEvent: {}
+[66.564425] (pure_pursuit) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_pure_pursuit_egg\n'}
+[66.578003] (-) TimerEvent: {}
+[66.636684] (pure_pursuit) CommandEnded: {'returncode': 0}
+[66.678754] (-) TimerEvent: {}
+[66.780811] (-) TimerEvent: {}
+[66.817025] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'install'}
+[66.883864] (-) TimerEvent: {}
+[66.888520] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/f1tenth_ws/build/pure_pursuit'], 'cwd': '/home/nvidia/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_AGENT_PID', '2876'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/f1tenth_ws/install/vesc_driver/lib:/home/nvidia/f1tenth_ws/install/vesc_ackermann/lib:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2704'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '7:59455'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nvidia/f1tenth_ws/install/range_lib/bin:/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2913,unix/ubuntu:/tmp/.ICE-unix/2913'), ('INVOCATION_ID', '991d3b8c5b624e71b6f5431147d0e2c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/home/nvidia/f1tenth_ws/install/ackermann_mux:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:36b441ec-dfbf-4c8c-9cdc-9be25eb079c3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/f1tenth_ws/build/pure_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/nvidia/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/f1tenth_ws/install/vesc:/home/nvidia/f1tenth_ws/install/vesc_driver:/home/nvidia/f1tenth_ws/install/vesc_ackermann:/home/nvidia/f1tenth_ws/install/vesc_msgs:/home/nvidia/f1tenth_ws/install/teleop_tools:/home/nvidia/f1tenth_ws/install/teleop_tools_msgs:/home/nvidia/f1tenth_ws/install/range_lib:/home/nvidia/f1tenth_ws/install/pure_pursuit:/home/nvidia/f1tenth_ws/install/ackermann_mux:/home/nvidia/f1tenth_ws/install/f1tenth_stack:/home/nvidia/f1tenth_ws/install/joy_teleop:/home/nvidia/f1tenth_ws/install/particle_filter:/home/nvidia/f1tenth_ws/install/mouse_teleop:/home/nvidia/f1tenth_ws/install/key_teleop:/opt/ros/galactic')]), 'shell': False}
+[66.960109] (pure_pursuit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[66.962186] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node\n'}
+[66.983611] (-) TimerEvent: {}
+[67.010479] (pure_pursuit) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""\n'}
+[67.011337] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh\n'}
+[67.012406] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv\n'}
+[67.014367] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info\n'}
+[67.014995] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/PKG-INFO\n'}
+[67.015776] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/SOURCES.txt\n'}
+[67.016920] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/top_level.txt\n'}
+[67.017957] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages//pure_pursuit.egg-info/dependency_links.txt\n'}
+[67.019227] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit\n'}
+[67.019895] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py\n'}
+[67.083804] (-) TimerEvent: {}
+[67.184756] (-) TimerEvent: {}
+[67.199990] (pure_pursuit) StdoutLine: {'line': b"Listing '/home/nvidia/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...\n"}
+[67.217512] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py\n'}
+[67.218287] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/clickpoint_logger.py\n'}
+[67.219023] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py\n'}
+[67.219454] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit\n'}
+[67.220144] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit\n'}
+[67.221439] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh\n'}
+[67.222016] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv\n'}
+[67.223245] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh\n'}
+[67.223773] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv\n'}
+[67.224948] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash\n'}
+[67.226201] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh\n'}
+[67.227550] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh\n'}
+[67.228884] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv\n'}
+[67.230102] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv\n'}
+[67.231369] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit\n'}
+[67.232628] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake\n'}
+[67.233552] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake\n'}
+[67.234773] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml\n'}
+[67.245980] (pure_pursuit) CommandEnded: {'returncode': 0}
+[67.285944] (-) TimerEvent: {}
+[67.387664] (-) TimerEvent: {}
+[67.489420] (-) TimerEvent: {}
+[67.596827] (-) TimerEvent: {}
+[67.707601] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 0}
+[67.712142] (-) TimerEvent: {}
+[67.712604] (-) EventReactorShutdown: {}

@@ -1,0 +1,37 @@
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:110:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_min[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  110 |         float [01;35m[Kangle_min[m[K = scan_msg->angle_min;
+      |               [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:115:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kidx_min[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  115 |         int [01;35m[Kidx_min[m[K = (int) ((angle_max-fov)/angle_increment);
+      |             [01;35m[K^~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:116:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kidx_max[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  116 |         int [01;35m[Kidx_max[m[K = (int) ((angle_max+fov)/angle_increment);
+      |             [01;35m[K^~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::publish_gap_follow(std::vector<float>)[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:160:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  160 |         for (int i=0;[01;35m[Ki<ranges.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:185:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  185 |         for (int i=0;[01;35m[Ki<ranges_processed.size()[m[K;i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:224:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  224 |          velocity = vel_max
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+  225 |         [32m[K}[m[K
+      |         [32m[K~[m[K                   
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:207:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_min[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  207 |         float [01;35m[Kangle_min[m[K = -2.3499;
+      |               [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::check_pure_pursuit()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:244:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  244 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::visualize_path_points()[m[K’:
+[01m[K/home/nvidia/f1tenth_ws/src/pure_pursuit/src/pure_pursuit_node.cpp:325:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  325 |         for(int i=0; [01;35m[Ki<waypoints.size()[m[K; ++i)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/pure_pursuit_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
