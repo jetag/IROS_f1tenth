@@ -5,12 +5,16 @@ It is very convenient and easy to use, once you get the hang of it and customize
 
 ### The following are the steps to run the code
 You need to make sure that you are on the same local/wifi network as your f1tenth vehicle. One simple way to do that is to get both your laptop and the vehicle on the same wifi network and then use ifconfig to get ip details. Once you have that, you can ssh into the vehicle using the following command -
-`ssh -L 9091:localhost:9091 -E /dev/null nvidia@192.168.90.231`
+```
+ssh -L 9091:localhost:9091 -E /dev/null nvidia@192.168.90.231
+```
 
 or you can customize the script `car.sh` depending on your car's IP for the future.
 
 Once you are in the vehicle, you need to run the following commands to get the vehicle up and running. Firstly, run `tmux` and get a new terminal. Then, run the following script in the terminal to automatically create 4 sourced windows - 
-`./run.sh`
+```
+./run.sh
+```
 
 Next, you need to run the rosbridge server to get the rosbridge running. Run the following command in a new terminal -
 `ros2 launch rosbridge_server rosbridge_websocket_launch.xml port:=9091`
